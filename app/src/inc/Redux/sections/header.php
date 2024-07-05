@@ -15,10 +15,10 @@ Redux::set_section(
 		'fields' => array(
 
          array(
-            'id'       => 'top_string_title',
+            'id'       => 'rmbt-top_string_title',
             'type'     => 'text',
             'title'    => esc_html__('Top String Title', 'rmbt_renoteck'),
-            'default'  => esc_html__('GET A FREE ESTIMATE','rmbt_renoteck'),
+            'default'  => esc_html__('get a free estimate','rmbt_renoteck'),
          ),
 
 
