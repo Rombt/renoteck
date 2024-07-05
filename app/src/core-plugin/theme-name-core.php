@@ -15,12 +15,12 @@ if (!function_exists('add_action')) {
 	exit;
 }
 
-function rmbt_impex_scripts_admin()
+function rmbt_renoteck_scripts_admin()
 {
-	wp_enqueue_style('rmbt_impex-admin_main', plugins_url() . '/core-plugin/assets/styles/main-style.min.css', array(), '1.0', 'all');
-	wp_enqueue_script('rmbt_impex-admin_core_jq', plugins_url() . '/core-plugin/assets/js/admin.main.min.js', array('jquery'), '1.0', true);
+	wp_enqueue_style('rmbt_renoteck-admin_main', plugins_url() . '/core-plugin/assets/styles/main-style.min.css', array(), '1.0', 'all');
+	wp_enqueue_script('rmbt_renoteck-admin_core_jq', plugins_url() . '/core-plugin/assets/js/admin.main.min.js', array('jquery'), '1.0', true);
 }
-add_action('admin_enqueue_scripts', 'rmbt_impex_scripts_admin');
+add_action('admin_enqueue_scripts', 'rmbt_renoteck_scripts_admin');
 
 require_once plugin_dir_path(__FILE__) . 'inc/general-admin.php';
 // require_once plugin_dir_path(__FILE__) . 'inc/ajax.php';

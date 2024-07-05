@@ -18,17 +18,17 @@ if ( class_exists( 'WooCommerce' ) ) {
 	require_once get_template_directory() . '/woocommerce/wc-functions-remove.php';
 }
 
-function rmbt_impex_scripts() {
+function rmbt_renoteck_scripts() {
 
 	wp_enqueue_style( 'swiper-bundle', get_template_directory_uri() . '/assets/styles/libs/swiper-bundle.min.css', array(), '1.0', 'all' );
-	wp_enqueue_style( 'rmbt_impex-main', get_template_directory_uri() . '/assets/styles/main-style.min.css', array(), '1.0', 'all' );
+	wp_enqueue_style( 'rmbt_renoteck-main', get_template_directory_uri() . '/assets/styles/main-style.min.css', array(), '1.0', 'all' );
 
 	wp_enqueue_script( 'swiper-bundle', get_template_directory_uri() . '/assets/js/libs/swiper-bundle.min.js', array(), '', true );
-	wp_enqueue_script( 'rmbt_impex-app', get_template_directory_uri() . '/assets/js/app.main.min.js', array( 'jquery' ), '1.0', true );
+	wp_enqueue_script( 'rmbt_renoteck-app', get_template_directory_uri() . '/assets/js/app.main.min.js', array( 'jquery' ), '1.0', true );
 
 
 	wp_add_inline_script(
-		'rmbt_impex-app',
+		'rmbt_renoteck-app',
 		'const rmbtImpexApp = ' . json_encode( [
 			// 'ajaxUrl' => admin_url('ajax.php'),		// ????
 			// 'rmbtArrCategories' => $categories,		// your data if you need it
@@ -36,7 +36,7 @@ function rmbt_impex_scripts() {
 		'before'
 	);
 }
-add_action( 'wp_enqueue_scripts', 'rmbt_impex_scripts', 20 );
+add_action( 'wp_enqueue_scripts', 'rmbt_renoteck_scripts', 20 );
 
 function rmbt_site_setup() {
 
@@ -59,22 +59,22 @@ function rmbt_site_setup() {
 
 	register_nav_menus(
 		array(
-			'header_nav' => esc_html__( 'rmbt_Header Navigation', 'rmbt_impex' ),
-			'footer_nav' => esc_html__( 'rmbt_Footer Navigation', 'rmbt_impex' ),
+			'header_nav' => esc_html__( 'rmbt_Header Navigation', 'rmbt_renoteck' ),
+			'footer_nav' => esc_html__( 'rmbt_Footer Navigation', 'rmbt_renoteck' ),
 		)
 	);
 
-	load_theme_textdomain( 'rmbt_impex', get_template_directory() . '/languages' );
+	load_theme_textdomain( 'rmbt_renoteck', get_template_directory() . '/languages' );
 	add_theme_support( 'automatic-feed-links' );
 }
 add_action( 'after_setup_theme', 'rmbt_site_setup' );
 
-function simple_rmbt_impex_content_width() {
-	$GLOBALS['content_width'] = apply_filters( 'simple_rmbt_impex_content_width', 640 );
+function simple_rmbt_renoteck_content_width() {
+	$GLOBALS['content_width'] = apply_filters( 'simple_rmbt_renoteck_content_width', 640 );
 }
-add_action( 'after_setup_theme', 'simple_rmbt_impex_content_width', 0 );
+add_action( 'after_setup_theme', 'simple_rmbt_renoteck_content_width', 0 );
 
-function rmbt_impex_register_required_plugins() {
+function rmbt_renoteck_register_required_plugins() {
 	$plugins = array(
 		array(
 			'name' => 'core plugin',
@@ -128,14 +128,14 @@ function rmbt_impex_register_required_plugins() {
 
 	tgmpa( $plugins, $config );
 }
-add_action( 'tgmpa_register', 'rmbt_impex_register_required_plugins' );
+add_action( 'tgmpa_register', 'rmbt_renoteck_register_required_plugins' );
 
 function rmbt_widgets_init() {
 	register_sidebar(
 		array(
-			'name' => esc_html__( 'Sidebar For Blog page', 'rmbt_impex' ),
+			'name' => esc_html__( 'Sidebar For Blog page', 'rmbt_renoteck' ),
 			'id' => 'rmbt_blog_sidebar',
-			'description' => esc_html__( 'Add widgets here', 'rmbt_impex' ),
+			'description' => esc_html__( 'Add widgets here', 'rmbt_renoteck' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget' => '</section>',
 			'before_title' => '<h2 class="widget-title">',
@@ -144,9 +144,9 @@ function rmbt_widgets_init() {
 	);
 	register_sidebar(
 		array(
-			'name' => esc_html__( 'Sidebar For Shop page', 'rmbt_impex' ),
+			'name' => esc_html__( 'Sidebar For Shop page', 'rmbt_renoteck' ),
 			'id' => 'rmbt_shop_sidebar',
-			'description' => esc_html__( 'Add widgets here', 'rmbt_impex' ),
+			'description' => esc_html__( 'Add widgets here', 'rmbt_renoteck' ),
 			'before_widget' => '<section id="%1$s" class="widget %2$s">',
 			'after_widget' => '</section>',
 			'before_title' => '<h2 class="widget-title">',
@@ -175,11 +175,11 @@ function rmbt_add_class_menus_links( $atts, $item, $args ) {
 add_filter( 'nav_menu_link_attributes', 'rmbt_add_class_menus_links', 10, 3 );
 
 function rmbt_change_menus_items( $args, $item ) {
-	global $rmbt_impex_options;
+	global $rmbt_renoteck_options;
 
 	if ( $args->theme_location === 'food_menu' ) {
 		if ( class_exists( 'ReduxFramework' ) && in_array( 'menu-item-type-post_type_archive', $item->classes ) ) {
-			$args->before = '<img src="' . $rmbt_impex_options['restaurant_menu-section_icon_first_item_menu']['url'] . '" alt="">';
+			$args->before = '<img src="' . $rmbt_renoteck_options['restaurant_menu-section_icon_first_item_menu']['url'] . '" alt="">';
 		} else {
 			if ( class_exists( 'ACF' ) ) {
 				$args->before = '<img src="' . get_field( 'food-categories-icon', 'term_' . $item->object_id ) . '" alt="">';

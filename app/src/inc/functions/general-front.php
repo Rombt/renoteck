@@ -326,17 +326,17 @@ function rmbt_trim_excerpt($length, $text = '')
 
 function rmbt_redux_get_url($id_field, $custom_default_url = '')
 {
-	global $rmbt_impex_options;
+	global $rmbt_renoteck_options;
 
-	if (!class_exists('Redux') || !isset($rmbt_impex_options[$id_field]) || $rmbt_impex_options[$id_field] === '') {
+	if (!class_exists('Redux') || !isset($rmbt_renoteck_options[$id_field]) || $rmbt_renoteck_options[$id_field] === '') {
 		return esc_url($custom_default_url !== '' ? $custom_default_url : false);
 	}
 
-	if (isset($rmbt_impex_options[$id_field])) {
-		if (stripos($rmbt_impex_options[$id_field], get_site_url()) === 0) {
-			return $rmbt_impex_options[$id_field];
+	if (isset($rmbt_renoteck_options[$id_field])) {
+		if (stripos($rmbt_renoteck_options[$id_field], get_site_url()) === 0) {
+			return $rmbt_renoteck_options[$id_field];
 		} else {
-			$clear_url = str_replace($_SERVER['SERVER_NAME'] . '/', '', $rmbt_impex_options[$id_field]);
+			$clear_url = str_replace($_SERVER['SERVER_NAME'] . '/', '', $rmbt_renoteck_options[$id_field]);
 			return esc_url(get_template_directory_uri() . $clear_url);
 		}
 	}
@@ -355,17 +355,17 @@ function rmbt_redux_get_url($id_field, $custom_default_url = '')
  */
 function rmbt_redux_get_pic_url($id_field_pic, $custom_default_url = '')
 {
-	global $rmbt_impex_options;
+	global $rmbt_renoteck_options;
 
-	if (!class_exists('Redux') || !isset($rmbt_impex_options[$id_field_pic]['url']) || $rmbt_impex_options[$id_field_pic]['url'] === '') {
+	if (!class_exists('Redux') || !isset($rmbt_renoteck_options[$id_field_pic]['url']) || $rmbt_renoteck_options[$id_field_pic]['url'] === '') {
 		return esc_url($custom_default_url !== '' ? $custom_default_url : false);
 	}
 
-	if (isset($rmbt_impex_options[$id_field_pic]['url'])) {
-		if (stripos($rmbt_impex_options[$id_field_pic]['url'], get_site_url()) === 0) {
-			return $rmbt_impex_options[$id_field_pic]['url'];
+	if (isset($rmbt_renoteck_options[$id_field_pic]['url'])) {
+		if (stripos($rmbt_renoteck_options[$id_field_pic]['url'], get_site_url()) === 0) {
+			return $rmbt_renoteck_options[$id_field_pic]['url'];
 		} else {
-			$clear_url = str_replace($_SERVER['SERVER_NAME'] . '/', '', $rmbt_impex_options[$id_field_pic]['url']);
+			$clear_url = str_replace($_SERVER['SERVER_NAME'] . '/', '', $rmbt_renoteck_options[$id_field_pic]['url']);
 			return esc_url(get_template_directory_uri() . $clear_url);
 		}
 	}
@@ -388,12 +388,12 @@ function rmbt_redux_img($id_field_pic, $alt = "", $id_svg = '')
 
 function rmbt_get_redux_field($id_field, $kses = false)
 {
-	global $rmbt_impex_options;
+	global $rmbt_renoteck_options;
 
 	if ($kses) {
-		return class_exists('ReduxFramework') ? wp_kses($rmbt_impex_options[$id_field], 'post') : "";
+		return class_exists('ReduxFramework') ? wp_kses($rmbt_renoteck_options[$id_field], 'post') : "";
 	}
-	return class_exists('ReduxFramework') ? esc_html__($rmbt_impex_options[$id_field]) : "";
+	return class_exists('ReduxFramework') ? esc_html__($rmbt_renoteck_options[$id_field]) : "";
 }
 
 function rmbt_phone_number_clear_redux($phone_number)
@@ -407,9 +407,9 @@ function rmbt_phone_number_clear_redux($phone_number)
  */
 function get_arr_names_cat_equip()
 {
-	global $rmbt_impex_options;
+	global $rmbt_renoteck_options;
 
-	$arr_redux_fields = array_filter($rmbt_impex_options, function ($var) {
+	$arr_redux_fields = array_filter($rmbt_renoteck_options, function ($var) {
 		if (str_contains($var, 'equipCatPage') && str_contains($var, '_article-title')) {
 			return $var;
 		}

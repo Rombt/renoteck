@@ -7,7 +7,7 @@ if (!class_exists('Redux')) {
 }
 
 // $opt_name = 'restaurant_site_options';
-$opt_name = 'rmbt_pc_options';
+$opt_name = 'rmbt_renoteck_options';
 $dir = dirname(__FILE__) . DIRECTORY_SEPARATOR;
 $sample_patterns = array();
 
