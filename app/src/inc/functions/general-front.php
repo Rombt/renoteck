@@ -26,12 +26,12 @@ function rmbt_custom_WPquery($rmbt_post_type, $rmbt_posts_per_page, $rmbt_curren
 function rmbt_get_breadcrumbs()
 {
 
-	$text['home'] = esc_html__('Home', 'restaurant-site');
-	$text['category'] = esc_html__('Archive', 'restaurant-site') . ' "%s"';
-	$text['search'] = esc_html__('Search results', 'restaurant-site') . ' "%s"';
-	$text['tag'] = esc_html__('Tag', 'restaurant-site') . ' "%s"';
-	$text['author'] = esc_html__('Author', 'restaurant-site') . ' %s';
-	$text['404'] = esc_html__('Error 404', 'restaurant-site');
+	$text['home'] = esc_html__('Home', 'rmbt_renoteck');
+	$text['category'] = esc_html__('Archive', 'rmbt_renoteck') . ' "%s"';
+	$text['search'] = esc_html__('Search results', 'rmbt_renoteck') . ' "%s"';
+	$text['tag'] = esc_html__('Tag', 'rmbt_renoteck') . ' "%s"';
+	$text['author'] = esc_html__('Author', 'rmbt_renoteck') . ' %s';
+	$text['404'] = esc_html__('Error 404', 'rmbt_renoteck');
 
 	$show_current = 1;
 	$show_on_home = 0;
@@ -62,7 +62,7 @@ function rmbt_get_breadcrumbs()
 		}
 
 		if (get_option('page_for_posts') && is_home()) {
-			echo '<nav class="breadcrumbs"><a href="' . esc_url($home_link) . '">' . esc_attr($text['home']) . '</a>' . rmbt_wp_kses($delimiter) . ' ' . __('Blog', 'restaurant-site') . '</nav>';
+			echo '<nav class="breadcrumbs"><a href="' . esc_url($home_link) . '">' . esc_attr($text['home']) . '</a>' . rmbt_wp_kses($delimiter) . ' ' . __('Blog', 'rmbt_renoteck') . '</nav>';
 		}
 	} else {
 
@@ -187,7 +187,7 @@ function rmbt_get_breadcrumbs()
 			if (is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author()) {
 				echo ' (';
 			}
-			echo rmbt_wp_kses($delimiter) . esc_html__('Page', 'restaurant-site') . ' ' . get_query_var('paged');
+			echo rmbt_wp_kses($delimiter) . esc_html__('Page', 'rmbt_renoteck') . ' ' . get_query_var('paged');
 			if (is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author()) {
 				echo ')';
 			}

@@ -16,6 +16,22 @@
    <div class="rmbt-page-wrap">
 
 
+      <div class="wrapper-section">
+         <div class="rmbt-full-width rmbt-top-string-full-width">
+            <section class="rmbt-container rmbt-top-string">
+               <div class="rmbt-top-string__row">
+                  <div class="rmbt-top-string__col">
+                     <h3><?php echo rmbt_get_redux_field('rmbt-top_string_title') ?></h3>
+                  </div>
+               </div>
+            </section>
+         </div>
+      </div>
+
+
+
+
+
       <?php
 		// для стандартного WP виджета поиск файл searchform.php должен находится в корне темы
 		// для работоспособности поиска в целом searchform.php может быть где угодно

@@ -1,13 +1,13 @@
 <?php
 /*
-Plugin Name: -core-plugin
+Plugin Name: Renoteck Core Plugin
 Plugin URI: #
 Description:  
 Version: 1.0
 Author: Rombt
 Author URI: #
 License: Proprietary
-Text Domain: rmbt_ 
+Text Domain: rmbt_renoteck 
 */
 
 if (!function_exists('add_action')) {

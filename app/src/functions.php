@@ -77,11 +77,11 @@ add_action( 'after_setup_theme', 'simple_rmbt_renoteck_content_width', 0 );
 function rmbt_renoteck_register_required_plugins() {
 	$plugins = array(
 		array(
-			'name' => 'core plugin',
+			'name' => 'renoteck core',
 			// The plugin name.
-			'slug' => 'core-plugin',
+			'slug' => 'renoteck-core',
 			// The plugin slug (typically the folder name).
-			'source' => get_template_directory() . '/plugins/core-plugin.zip',
+			'source' => plugin_dir_path(__FILE__) . '/plugins/renoteck-core',
 			// The plugin source.
 			'required' => true,
 			// If false, the plugin is only 'recommended' instead of required.

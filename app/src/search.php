@@ -21,7 +21,7 @@ get_header();
 			<h1 class="page-title">
 				<?php
 				/* translators: %s: search query. */
-				printf(esc_html__('Search Results for: %s', 'simple-restaurant-site'), '<span>' . get_search_query() . '</span>');
+				printf(esc_html__('Search Results for: %s', 'simple-rmbt_renoteck'), '<span>' . get_search_query() . '</span>');
 				?>
 			</h1>
 		</header>

@@ -140,6 +140,11 @@ Redux::set_args($opt_name, $args);
  * ---> START SECTIONS
  */
 
+require_once dirname(__FILE__) . '/sections/header.php';
+
+
+
+
 // require_once dirname(__FILE__) . '/sections/front_page.php';
 // require_once dirname(__FILE__) . '/sections/contacts.php';
 // require_once dirname(__FILE__) . '/sections/social_networks.php';
@@ -158,7 +163,6 @@ Redux::set_args($opt_name, $args);
 // require_once dirname(__FILE__) . '/sections/404_page.php';
 
 
-// require_once dirname(__FILE__) . '/sections/header.php';
 // require_once dirname(__FILE__) . '/sections/footer.php';
 // require_once dirname(__FILE__) . '/sections/copyright.php';
 // require_once dirname(__FILE__) . '/sections/phone_numbers.php';

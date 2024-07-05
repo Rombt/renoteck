@@ -1,0 +1,23 @@
+@top-string-hight: 52px;
+
+.rmbt-top-string-full-width {
+  height: @top-string-hight;
+  background-color: #a41c35;
+}
+.rmbt-container {
+}
+.rmbt-top-string {
+  &__row {
+    .row-flex();
+  }
+  &__col {
+    .col();
+    .size(12);
+    h3 {
+      line-height: @top-string-hight;
+      margin: 0px 0px 0px 0px;
+
+      border: 1px solid #0515fd;
+    }
+  }
+}
