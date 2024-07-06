@@ -630,7 +630,7 @@ class HorizontalMenu {
 }
 
 const param = {
-  containersMenu: ['.cont-horizont-menu'],
+  containersMenu: ['.cont-main-header-menu'],
   contAdditionalClasses: {
     drop: [],
     overflow: [],

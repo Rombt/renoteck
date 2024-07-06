@@ -21,6 +21,44 @@ Redux::set_section(
             'default'  => esc_html__('get a free estimate','rmbt_renoteck'),
          ),
 
+         array(
+            'id'       => 'rmbt-call-today_title',
+            'type'     => 'text',
+            'title'    => esc_html__('Call Today Title', 'rmbt_renoteck'),
+            'default'  => esc_html__('call today','rmbt_renoteck'),
+         ),
+         array(
+            'id'       => 'rmbt-call-today_number',
+            'type'     => 'text',
+            'title'    => esc_html__('Input your phone number', 'rmbt_renoteck'),
+         ),
+
+         array(
+            'id'       => 'rmbt-instagram_title',
+            'type'     => 'text',
+            'title'    => esc_html__('Instagram Title', 'rmbt_renoteck'),
+            'default'  => esc_html__('instagram','rmbt_renoteck'),
+         ),
+         array(
+				'id'       => 'rmbt-instagram_nick',
+            'type'     => 'text',
+            'title'    => esc_html__('Your Instagram NickName', 'rmbt_renoteck'),
+				'default'  => '@RenoteckRoofing',
+         ),
+
+         array(
+            'id'       => 'rmbt-facebook_title',
+            'type'     => 'text',
+            'title'    => esc_html__('Input Facebook Title', 'rmbt_renoteck'),
+            'default'  => esc_html__('Facebook','rmbt_renoteck'),
+         ),
+         array(
+				'id'       => 'rmbt-facebook_nick',
+            'type'     => 'text',
+            'title'    => esc_html__('Your Facebook NickName', 'rmbt_renoteck'),
+				'default'  => 'RenoteckRoofing',
+         ),
+
 
 
 			// array(

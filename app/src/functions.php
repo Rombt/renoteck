@@ -59,8 +59,8 @@ function rmbt_site_setup() {
 
 	register_nav_menus(
 		array(
-			'header_nav' => esc_html__( 'rmbt_Header Navigation', 'rmbt_renoteck' ),
-			'footer_nav' => esc_html__( 'rmbt_Footer Navigation', 'rmbt_renoteck' ),
+			'rmbt-header_nav' => esc_html__( 'rmbt_Header Navigation', 'rmbt_renoteck' ),
+			'rmbt-footer_nav' => esc_html__( 'rmbt_Footer Navigation', 'rmbt_renoteck' ),
 		)
 	);
 

@@ -3,8 +3,8 @@
 .rmbt-top-string-full-width {
   height: @top-string-hight;
   background-color: #a41c35;
-}
-.rmbt-container {
+  position: relative;
+  z-index: 1;
 }
 .rmbt-top-string {
   &__row {
@@ -15,7 +15,9 @@
     .size(12);
     h3 {
       font-family: 'TrajanPro3Bold';
-      font-size: 19.2px;
+      font-size: 19px;
+      .adaptive-prop(font-size, 19, 14);
+
       font-weight: 500;
       color: #fff;
       line-height: @top-string-hight;
@@ -24,6 +26,248 @@
       vertical-align: middle;
 
       margin: 0px 0px 0px 0px;
+    }
+  }
+}
+
+.rmbt-full-width {
+}
+.rmbt-hero-block-full-width {
+  position: relative;
+  padding: 0px 0px 0px 0px;
+  height: 1084px;
+  overflow: hidden;
+
+  &__overlay,
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+  }
+
+  &:before {
+    background: #043450;
+    background: linear-gradient(184deg, #000 4%, rgba(255, 255, 255, 0) 75%);
+  }
+
+  &:after {
+    background: #043450;
+    background: linear-gradient(180deg, #000 4%, rgba(255, 255, 255, 0) 75%);
+  }
+
+  &__overlay {
+    background-color: rgba(0, 0, 0, 0.11);
+  }
+}
+.wrap-img {
+  position: absolute;
+  left: 0px;
+  top: 10px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.rmbt-main-header-full-width {
+}
+.rmbt-main-header {
+  position: relative;
+  z-index: 1;
+  color: #fff;
+
+  &__row {
+    .row-flex();
+  }
+  &__col {
+    .col();
+    .size(12);
+    position: relative;
+
+    // height: 113px;
+    .adaptive-prop(height, 113, 65);
+
+    background-color: #fff;
+    border-radius: 56.91px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    column-gap: 20px;
+
+    padding: 10px 16px 10px 16px;
+
+    &:after {
+      content: '';
+
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      width: 1.37px;
+      height: 64.46px;
+      background-color: #043450;
+    }
+
+    .to(1640px,{
+    &:after{
+      display: none;
+    }
+    });
+  }
+
+  svg {
+    .adaptive-prop(width, 62, 42);
+    .adaptive-prop(height, 62, 42);
+
+    flex-shrink: 0;
+  }
+
+  &__block-text {
+    text-align: center;
+
+    height: 80%;
+    flex: 0 0 60%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+    p {
+      margin: 0px 0px 0px 0px;
+
+      &:first-child {
+        font-family: 'TrajanPro3Bold';
+        .adaptive-prop(font-size, 16, 12);
+        font-weight: 500;
+        color: #767676;
+        text-transform: uppercase;
+      }
+      &:last-child {
+        font-family: 'Roboto';
+        .adaptive-prop(font-size, 25, 12);
+        font-weight: 500;
+        color: #262262;
+        text-transform: capitalize;
+      }
+    }
+  }
+}
+.main-header-icons-row {
+  &__wrap-blocks {
+    display: flex;
+
+    justify-content: space-between;
+    max-width: 1000px;
+  }
+
+  &__block {
+    display: flex;
+    align-items: center;
+    flex: 0 1 30%;
+
+    .adaptive-prop(column-gap, 30, 10);
+
+    // column-gap: 30px;
+  }
+}
+.rmbt-main-header-logo {
+  img {
+    .adaptive-prop(width, 305, 140);
+    .adaptive-prop(height, 85, 40);
+  }
+}
+.rmbt-call-today {
+}
+.rmbt-instagram {
+  // margin-left: 50px;
+}
+.rmbt-facebook {
+}
+.main-header-nav {
+  .row-flex();
+
+  &__col {
+    .col();
+    .size(10);
+    margin: 0 auto;
+  }
+
+  .cont-main-header-menu {
+    .adaptive-prop(height, 70, 30);
+
+    a {
+      font-family: 'TrajanPro3Bold';
+      font-size: 20px;
+
+      .adaptive-prop(font-size, 20, 14);
+
+      font-weight: 400;
+      color: #fff;
+      line-height: 140%;
+      text-align: center;
+      text-transform: uppercase;
+      vertical-align: middle;
+
+      color: #fff;
+    }
+
+    nav > ul > li {
+      padding: 5px 0px 5px 0px;
+      &:hover {
+        border-bottom: 4px solid #a41c35;
+      }
+    }
+
+    nav > ul li ul {
+      top: 120%;
+      border: 1px solid #ffffff;
+      border-radius: 10px;
+
+      border-image: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(255, 255, 255, 0.5) 33%
+        )
+        1 1 1 1 stretch;
+    }
+
+    .icon-drop {
+      width: 16px;
+      height: 16px;
+
+      &:before,
+      &:after {
+        background-color: #a41c35;
+      }
+    }
+
+    .icon-overflow {
+      span,
+      &::after,
+      &::before {
+        background-color: #fff;
+        height: 4px;
+        width: 4px;
+      }
+    }
+
+    .overflow-cont {
+      top: 110%;
+      transform: translate(0%, 0);
+
+      border: 1px solid #ffffff;
+      border-radius: 10px;
+
+      border-image: linear-gradient(
+          180deg,
+          rgba(255, 255, 255, 1) 0%,
+          rgba(255, 255, 255, 0.3) 69%
+        )
+        1 1 1 1;
     }
   }
 }
