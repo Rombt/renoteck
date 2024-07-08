@@ -141,6 +141,7 @@ Redux::set_args($opt_name, $args);
  */
 
 require_once dirname(__FILE__) . '/sections/header.php';
+require_once dirname(__FILE__) . '/sections/hero_block.php';
 
 
 
