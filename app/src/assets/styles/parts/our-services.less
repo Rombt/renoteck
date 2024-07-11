@@ -1,0 +1,115 @@
+.rmbt-our-services-full-width {
+  position: relative;
+  top: -85px;
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 467px;
+    width: 100%;
+    height: 100%;
+
+    &:after {
+      content: '';
+
+      position: absolute;
+      left: 0;
+      bottom: -298px;
+      // transform: translate(0,-50%);
+      width: 100%;
+      // height: 874px;
+      height: 1382px;
+
+      background-color: rgba(0, 0, 0, 0.55);
+      clip-path: polygon(0 53.2%, 100% 35.5%, 100% 100%, 0% 100%);
+    }
+
+    .wrap-img {
+      width: 100%;
+      height: 1382px;
+    }
+  }
+
+  .bg-decoration {
+    position: absolute;
+    left: 0px;
+    bottom: -120px;
+    height: 738px;
+    width: 100%;
+    background-color: rgba(164, 28, 53, 1);
+    border-radius: 64px 64px 0px 0px;
+    clip-path: polygon(0 0, 100% 0, 100% 67%, 0% 100%);
+  }
+}
+
+.rmbt-our-services {
+  height: 1086px;
+
+  &__row {
+    .row-flex();
+    padding-top: 150px;
+    box-sizing: border-box;
+
+    align-items: flex-start;
+    row-gap: 80px;
+
+    .section-title {
+      width: 100%;
+      margin: 0 auto 5px auto;
+      text-align: center;
+    }
+
+    .rmbt-our-services-button {
+      position: relative;
+      width: 476px;
+      height: 76px;
+      background: none;
+      border: 1px solid #fff;
+      line-height: 76px;
+      margin: 0 auto;
+    }
+  }
+  &__col {
+    .col();
+    .size(4);
+    height: 432px;
+  }
+}
+.rmbt-our-services-card {
+  &__img {
+    width: 480px;
+    height: 334px;
+    border-radius: 16px;
+  }
+  //   .wrap-img {
+  //   }
+  &__text {
+    width: 400px;
+    height: 98px;
+    text-align: center;
+    line-height: 98px;
+    font-size: 24px;
+    font-family: 'TrajanPro3SemiBold';
+    font-weight: 600;
+    color: #fff;
+    margin: 0 auto;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+
+    border-radius: 0 0 16px 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0);
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+    background-size: 1px 100%;
+    background-position: 100% 0 0 0;
+    background-repeat: no-repeat;
+  }
+}

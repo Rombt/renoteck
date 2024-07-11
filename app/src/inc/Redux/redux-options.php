@@ -142,6 +142,9 @@ Redux::set_args($opt_name, $args);
 
 require_once dirname(__FILE__) . '/sections/header.php';
 require_once dirname(__FILE__) . '/sections/hero_block.php';
+require_once dirname(__FILE__) . '/sections/about_us_page.php';
+require_once dirname(__FILE__) . '/sections/our_services.php';
+require_once dirname(__FILE__) . '/sections/our_projects.php';
 
 
 
@@ -159,7 +162,6 @@ require_once dirname(__FILE__) . '/sections/hero_block.php';
 
 // require_once dirname(__FILE__) . '/sections/menu_page.php';
 // require_once dirname(__FILE__) . '/sections/blog_page.php';
-// require_once dirname(__FILE__) . '/sections/about_us_page.php';
 // require_once dirname(__FILE__) . '/sections/search_page.php';
 // require_once dirname(__FILE__) . '/sections/404_page.php';
 

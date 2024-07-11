@@ -1,0 +1,1 @@
+<h2 class="section-title"><?php echo esc_html($args['title']) ?></h2>
