@@ -4,8 +4,8 @@
 
       <div class="rmbt-our-services-full-width__bg">
          <div class="wrap-img">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/our_projects/bg_2.png" alt="">
-            <img src="<?php echo get_template_directory_uri() ?>/assets/img/our_projects/bg_1.png" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/our-services-block/bg_2.png" alt="">
+            <img src="<?php echo get_template_directory_uri() ?>/assets/img/our-services-block/bg_1.png" alt="">
          </div>
       </div>
 

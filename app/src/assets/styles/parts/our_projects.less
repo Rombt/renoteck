@@ -1,25 +1,288 @@
 .rmbt-our-projects-full-width {
+  * {
+    box-sizing: border-box;
+  }
   height: 1382px;
   position: relative;
   top: -150px;
   padding-top: 160px;
   border: 1px solid rgba(5, 253, 38, 0); // не убирать!
+
+  &__bg {
+    position: absolute;
+    left: 0px;
+    top: 730px;
+    width: 100%;
+    height: 1280px;
+    border-radius: 64px 64px 0 0;
+
+    .wrap-img {
+      width: 100%;
+      height: 100%;
+    }
+  }
 }
 .rmbt-our-projects {
+  padding-left: 0px;
+  padding-right: 0px;
+
   &__row {
+    .row-flex();
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -20px;
+    margin-right: -20px;
     .section-title {
       text-align: center;
       font-size: 60px;
+      width: 100%;
+      margin-bottom: 24px;
+    }
+
+    p {
+      font-family: 'Montserrat';
+      .adaptive-prop(font-size, 24, 14);
+      font-weight: 400;
+      color: #fff;
+      text-transform: capitalize;
+      letter-spacing: 2px;
+      line-height: 150%;
+      margin: 0px 0px 0px 0px;
+      text-align: center;
+      width: 100%;
+      position: relative;
     }
   }
   &__col {
+    .col();
+    .size(12);
+    margin-top: 100px;
+    height: 500px;
+    p {
+      margin-bottom: 80px;
+    }
+  }
+
+  svg {
+    fill: #fff;
+    stroke: #fff;
+    width: 170px;
+    height: 45px;
+    position: absolute;
+    top: 40%;
+  }
+
+  svg.arrow-left {
+    left: -180px;
+    transform: translate(0%, -50%) rotate(-90deg);
+  }
+  svg.arrow-right {
+    right: -180px;
+    transform: translate(0%, -50%) rotate(90deg);
+  }
+  .rmbt-our-projects-button {
+    width: 274px;
+    height: 60px;
+    position: relative;
+    background: none;
+    border: 1px solid #fff;
+    line-height: 60px;
+    margin: 0 auto;
   }
 }
+
+.tabs {
+  height: 736px;
+  margin-bottom: 100px;
+
+  &__nav {
+    display: flex;
+    column-gap: 42px;
+    justify-content: center;
+    margin-bottom: 56px;
+  }
+  &__title {
+    all: unset;
+    font-family: 'TrajanPro3Bold';
+    .adaptive-prop(font-size, 20, 20);
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+    cursor: pointer;
+  }
+  &__content {
+    width: 100%;
+
+    [data-tab-name='commercial'] {
+      background-color: rgba(250, 223, 174, 0.2);
+
+      width: 100%;
+      height: 496px;
+      margin: 0 auto;
+    }
+
+    [data-tab-name='industrial'] {
+      background-color: rgba(214, 250, 174, 0.2);
+
+      width: 100%;
+      height: 496px;
+      margin: 0 auto;
+    }
+  }
+  &__body {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
+  }
+
+  &__title-active {
+    border-bottom: 2px solid #a41c35;
+  }
+  &__body-active {
+  }
+}
+.rmbt-our-projects-tabs {
+}
+
 .rmbt-our-projects-picture-card {
+  position: relative;
+
   &__img {
+    border-radius: 25.6px;
+    margin: 0 auto;
   }
   &__text {
+    width: 224px;
+    height: 90px;
+    padding-top: 18px;
+    padding-bottom: 21px;
+    margin: 0 auto;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 0 0 16px 16px;
+    border-top: 1px solid rgba(255, 255, 255, 0);
+    border-left: 1px solid rgba(255, 255, 255, 0.4);
+    border-right: 1px solid rgba(255, 255, 255, 0.4);
+    background-image: linear-gradient(
+        to bottom,
+        rgba(255, 255, 255, 0.7),
+        rgba(255, 255, 255, 0)
+      ),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0));
+    background-size: 1px 100%;
+    background-position: 100% 0 0 0;
+    background-repeat: no-repeat;
+
+    h4 {
+      font-family: 'TrajanPro3SemiBold';
+      line-height: 35px;
+      font-size: 20px;
+      text-align: center;
+      color: #fff;
+      margin: 0px 0px 0px 0px;
+    }
+    p {
+      font-size: 16px;
+      font-family: Montserrat;
+      font-weight: 400;
+      color: #fff;
+      text-align: center;
+      text-transform: capitalize;
+      vertical-align: middle;
+      line-height: 25px;
+    }
   }
 }
+
+.rmbt-our-projects-picture-wrap-cards {
+  display: flex;
+  margin-bottom: 80px;
+
+  .rmbt-our-projects-main-card {
+    right: 18px;
+    z-index: 3;
+    .rmbt-our-projects-picture-card__img {
+      width: 360px;
+      height: 384px;
+    }
+
+    .rmbt-our-projects-picture-card__text {
+      width: 280px;
+      height: 112px;
+    }
+  }
+
+  .rmbt-our-projects-first-card {
+    top: 25px;
+    .rmbt-our-projects-picture-card__img {
+      width: 320px;
+      height: 344px;
+    }
+
+    .rmbt-our-projects-picture-card__text {
+      width: 256px;
+      height: 102px;
+    }
+  }
+  .left-first-card {
+    right: 10px;
+    z-index: 2;
+  }
+  .right-first-card {
+    right: 30px;
+    z-index: 1;
+  }
+
+  .rmbt-our-projects-second-card {
+    top: 51px;
+    .rmbt-our-projects-picture-card__img {
+      width: 280px;
+      height: 304px;
+    }
+
+    .rmbt-our-projects-picture-card__text {
+      width: 224px;
+      height: 90px;
+    }
+  }
+
+  .right-second-card {
+    right: 40px;
+  }
+}
+
+.rmbt-our-projects-video-wrap-cards {
+  width: 100%;
+  // height: 592px;
+  position: relative;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 80px;
+
+  .arrow-left {
+    left: -55px !important;
+    top: 50% !important;
+  }
+  .arrow-right {
+    right: -55px !important;
+    top: 50% !important;
+  }
+
+  .button-wrap {
+    width: 100%;
+  }
+
+  .rmbt-our-projects-button {
+  }
+}
+
 .rmbt-our-projects-video-card {
+  width: 480px;
+  height: 320px;
+  border-radius: 37px;
 }
