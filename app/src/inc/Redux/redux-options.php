@@ -146,12 +146,12 @@ require_once dirname(__FILE__) . '/sections/about_us_page.php';
 require_once dirname(__FILE__) . '/sections/our_services.php';
 require_once dirname(__FILE__) . '/sections/our_projects.php';
 
+require_once dirname(__FILE__) . '/sections/social_networks.php';
+require_once dirname(__FILE__) . '/sections/contacts.php';
 
 
 
 // require_once dirname(__FILE__) . '/sections/front_page.php';
-// require_once dirname(__FILE__) . '/sections/contacts.php';
-// require_once dirname(__FILE__) . '/sections/social_networks.php';
 // require_once dirname(__FILE__) . '/sections/equipment-categories.php';
 // require_once dirname(__FILE__) . '/sections/equipment_categories_group.php';
 // require_once dirname(__FILE__) . '/sections/archive-bakery.php';
