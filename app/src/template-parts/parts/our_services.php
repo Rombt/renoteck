@@ -18,14 +18,14 @@
                   <a href="#">
                      <?php echo rmbt_redux_img('rmbt-our-services_image-1', rmbt_get_redux_field('rmbt-our-services_imag-1_alt')) ?></a>
                </div>
-               <div class="rmbt-our-services-card__text">Residential</div>
+               <div class="blur-block rmbt-our-services-card__text">Residential</div>
             </div>
             <div class="rmbt-our-services__col rmbt-our-services-card">
                <div class="wrap-img rmbt-our-services-card__img">
                   <a href="#">
                      <?php echo rmbt_redux_img('rmbt-our-services_image-2', rmbt_get_redux_field('rmbt-our-services_imag-2_alt')) ?></a>
                </div>
-               <div class="rmbt-our-services-card__text">Commercial</div>
+               <div class="blur-block rmbt-our-services-card__text">Commercial</div>
             </div>
             <div class="rmbt-our-services__col rmbt-our-services-card">
                <div class="wrap-img rmbt-our-services-card__img">
@@ -33,7 +33,7 @@
                      <?php echo rmbt_redux_img('rmbt-our-services_image-3', rmbt_get_redux_field('rmbt-our-services_imag-3_alt')) ?>
                   </a>
                </div>
-               <div class="rmbt-our-services-card__text">Industrial</div>
+               <div class="blur-block rmbt-our-services-card__text">Industrial</div>
             </div>
             <?php get_template_part('template-parts/components/rmbt_button', null, ['class' => 'rmbt-our-services-button','title' => 'go to renoteck exteriors']); ?>
          </div>

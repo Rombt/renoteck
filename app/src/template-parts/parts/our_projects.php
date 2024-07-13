@@ -38,7 +38,7 @@
                                     src="<?php echo get_template_directory_uri() ?>/assets/img/our-projects-block/our-projects-picture_1.jpg"
                                     alt="">
                               </div>
-                              <div class="rmbt-our-projects-picture-card__text">
+                              <div class="blur-block rmbt-our-projects-picture-card__text">
                                  <h4>snap-look</h4>
                                  <p> Panel system </p>
                               </div>
@@ -50,7 +50,7 @@
                                     src="<?php echo get_template_directory_uri() ?>/assets/img/our-projects-block/our-projects-picture_2.jpg"
                                     alt="">
                               </div>
-                              <div class="rmbt-our-projects-picture-card__text">
+                              <div class="blur-block rmbt-our-projects-picture-card__text">
                                  <h4>snap-look</h4>
                                  <p> Panel system </p>
                               </div>
@@ -62,7 +62,7 @@
                                     src="<?php echo get_template_directory_uri() ?>/assets/img/our-projects-block/our-projects-picture_3.jpg"
                                     alt="">
                               </div>
-                              <div class="rmbt-our-projects-picture-card__text">
+                              <div class="blur-block rmbt-our-projects-picture-card__text">
                                  <h4>snap-look</h4>
                                  <p> Panel system </p>
                               </div>
@@ -74,7 +74,7 @@
                                     src="<?php echo get_template_directory_uri() ?>/assets/img/our-projects-block/our-projects-picture_4.jpg"
                                     alt="">
                               </div>
-                              <div class="rmbt-our-projects-picture-card__text">
+                              <div class="blur-block rmbt-our-projects-picture-card__text">
                                  <h4>snap-look</h4>
                                  <p> Panel system </p>
                               </div>
@@ -86,7 +86,7 @@
                                     src="<?php echo get_template_directory_uri() ?>/assets/img/our-projects-block/our-projects-picture_5.jpg"
                                     alt="">
                               </div>
-                              <div class="rmbt-our-projects-picture-card__text">
+                              <div class="blur-block rmbt-our-projects-picture-card__text">
                                  <h4>snap-look</h4>
                                  <p> Panel system </p>
                               </div>

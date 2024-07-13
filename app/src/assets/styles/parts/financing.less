@@ -1,0 +1,134 @@
+.wrapper-section-financing-block {
+  position: relative;
+  top: -340px;
+
+  * {
+    box-sizing: border-box;
+  }
+}
+.rmbt-financing-block-full-width {
+  height: 1396px;
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  .wrap-img {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.rmbt-financing-block {
+  padding-top: 160px;
+  &__row {
+    .row-flex();
+    row-gap: 100px;
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+  &__col {
+    .col();
+    .size(12);
+
+    h2 {
+      text-align: center;
+      margin: 0px 0px 50px 0px;
+    }
+
+    .button-wrap {
+      margin-top: 80px;
+      width: 100%;
+
+      .rmbt-financing-block-button {
+        width: 268px;
+        height: 76px;
+        line-height: 76px;
+        background: none;
+        color: #fff;
+        border: 1px solid #fff;
+        margin: 0 auto;
+      }
+    }
+  }
+
+  p {
+    font-family: 'Montserrat';
+    font-size: 24px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    line-height: 150%;
+    margin: 0px 0px 0px 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    width: 100%;
+  }
+}
+
+.rmbt-financing-block-wrap-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.rmbt-financing-block-card {
+  width: 480px;
+  height: 354px;
+
+  svg {
+    width: 128px;
+    height: 128px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+
+  h4 {
+    font-size: 24px;
+    font-family: TrajanPro3Bold;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+    line-height: 45px;
+    margin: 0px 0px 16px 0px;
+  }
+
+  &__body {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    top: -24px;
+    padding: 32px 24px 24px 24px;
+  }
+
+  &__subtitle {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 500;
+    color: #a41c35;
+    text-transform: capitalize;
+    text-align: center;
+    width: 100%;
+  }
+
+  &__text {
+    font-family: 'Montserrat';
+    font-size: 20px;
+    font-weight: 400;
+    color: #fff;
+    text-transform: capitalize;
+    line-height: 160%;
+    margin: 0px 0px 0px 0px;
+    margin-bottom: 0px;
+    text-align: center;
+    width: 100%;
+  }
+}

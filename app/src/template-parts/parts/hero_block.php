@@ -13,7 +13,7 @@
             <?php get_template_part('template-parts/components/rmbt_button', null, ['class' => 'massage-button','title' => 'MASSAGE ON FACEBOOK']); ?>
          </div>
       </div>
-      <div class="rmbt-hero-block__col rmbt-hero-block__capture-form">
+      <div class="rmbt-hero-block__col blur-block rmbt-hero-block__capture-form">
          <?php get_template_part('template-parts/components/capture-form');?>
       </div>
    </div>

@@ -5,7 +5,7 @@
          <img src="<?php echo get_template_directory_uri() ?>/assets/img/about_us-block/about-us-block__grd.png" alt="">
       </div>
 
-      <div class="rmbt-about-us-gallery">
+      <div class="blur-block rmbt-about-us-gallery">
          <diw class="rmbt-about-us-gallery__img wrap-img">
             <?php echo rmbt_redux_img('rmbt-about-us-gallery_image-1', rmbt_get_redux_field('rmbt-about-us-gallery_imag-1_alt')) ?>
          </diw>
@@ -47,19 +47,19 @@
             <div class="rmbt-about-us__col rmbt-about-us__icons-block icons-block">
                <div class="icons-block__years icon-block">
                   <div class="icon-block__title">25+</div>
-                  <div class="icon-block__text">
+                  <div class="blur-block icon-block__text">
                      Years Of Experience
                   </div>
                </div>
                <div class="icons-block__projects icon-block">
                   <div class="icon-block__title">15+</div>
-                  <div class="icon-block__text">
+                  <div class="blur-block icon-block__text">
                      Projects Completed
                   </div>
                </div>
                <div class="icons-block__suport icon-block">
                   <div class="icon-block__title">24<span>/7</span></div>
-                  <div class="icon-block__text">
+                  <div class="blur-block icon-block__text">
                      Customer Support
                   </div>
                </div>

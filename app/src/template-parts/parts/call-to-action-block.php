@@ -9,7 +9,7 @@
 
       <section class="rmbt-container rmbt-call-to-action-block">
          <div class="rmbt-call-to-action-block__row">
-            <div class="rmbt-call-to-action-block__col">
+            <div class="blur-block rmbt-call-to-action-block__col">
                <div class="rmbt-call-to-action-block__body">
                   <?php get_template_part('template-parts/components/title', 'section', ['title' => rmbt_get_redux_field('rmbt-call-to-action-block_section-title')]); ?>
                   <p><?php echo rmbt_get_redux_field('rmbt-call-to-action-block_section-text') ?></p>
