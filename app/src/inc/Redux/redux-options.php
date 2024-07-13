@@ -148,6 +148,7 @@ require_once dirname(__FILE__) . '/sections/our_projects.php';
 
 require_once dirname(__FILE__) . '/sections/social_networks.php';
 require_once dirname(__FILE__) . '/sections/contacts.php';
+require_once dirname(__FILE__) . '/sections/call-to-action-block.php';
 
 
 

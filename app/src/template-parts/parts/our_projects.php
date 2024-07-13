@@ -1,4 +1,4 @@
-<div class="wrapper-section">
+<div class="wrapper-section wrapper-section-our-projects">
    <div class="rmbt-full-width rmbt-our-projects-full-width">
 
       <div class="rmbt-our-projects-full-width__bg">
