@@ -150,6 +150,8 @@ require_once dirname(__FILE__) . '/sections/social_networks.php';
 require_once dirname(__FILE__) . '/sections/contacts.php';
 require_once dirname(__FILE__) . '/sections/call-to-action-block.php';
 require_once dirname(__FILE__) . '/sections/financing-block.php';
+require_once dirname(__FILE__) . '/sections/testimonials-block.php';
+require_once dirname(__FILE__) . '/sections/we_do_block.php';
 
 
 

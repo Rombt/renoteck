@@ -25,7 +25,6 @@
             <?php echo rmbt_redux_img('rmbt-about-us-gallery_image-6', rmbt_get_redux_field('rmbt-about-us-gallery_imag-6_alt')) ?>
          </diw>
          <svg>
-            <!-- <use xlink:href="<?php echo get_template_directory_uri() ?>/assets/img/icons/sprite.svg#arrow-right-thin"> -->
             <use xlink:href="<?php echo get_template_directory_uri() ?>/assets/img/icons/sprite.svg#arrow_1">
             </use>
          </svg>

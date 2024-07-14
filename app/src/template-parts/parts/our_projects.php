@@ -12,7 +12,7 @@
       <section class="rmbt-container rmbt-our-projects">
          <div class="rmbt-our-projects__row">
             <?php get_template_part('template-parts/components/title', 'section', ['title' => rmbt_get_redux_field('rmbt-our-projects_section-title')]); ?>
-            <p><?php echo rmbt_get_redux_field('rmbt-our-projects_section-subtitle-1') ?></p>
+            <p class="font-p"><?php echo rmbt_get_redux_field('rmbt-our-projects_section-subtitle-1') ?></p>
 
             <div class="rmbt-our-projects__col">
                <div class="tabs rmbt-our-projects-tabs">
@@ -108,7 +108,7 @@
                      </div>
                   </div>
                </div>
-               <p><?php echo rmbt_get_redux_field('rmbt-our-projects_section-subtitle-2') ?></p>
+               <p class="font-p"><?php echo rmbt_get_redux_field('rmbt-our-projects_section-subtitle-2') ?></p>
                <div class="rmbt-our-projects-video-wrap-cards">
                   <svg class="arrow-left">
                      <use xlink:href="<?php echo get_template_directory_uri() ?>/assets/img/icons/sprite.svg#arrow_2">

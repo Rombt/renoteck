@@ -10,16 +10,11 @@
       <section class="rmbt-container rmbt-financing-block">
          <div class="rmbt-financing-block__row">
             <div class="rmbt-financing-block__col">
-               <!-- <div class="rmbt-financing-block__body"> -->
                <?php get_template_part('template-parts/components/title', 'section', ['title' => rmbt_get_redux_field('rmbt-financing-block_section-title')]); ?>
-               <p><?php echo rmbt_get_redux_field('rmbt-financing-block_section-text') ?></p>
-               <!-- </div> -->
+               <p class="font-p"><?php echo rmbt_get_redux_field('rmbt-financing-block_section-text') ?></p>
             </div>
 
             <div class="rmbt-financing-block__col rmbt-financing-block-wrap-cards">
-               <!-- <div class="rmbt-financing-block-wrap-cards"> -->
-
-
                <div class="rmbt-financing-block-card">
                   <svg>
                      <use
@@ -62,11 +57,6 @@
                         all at any time (O.A.C. is required and fees apply)</div>
                   </div>
                </div>
-
-
-               <!-- </div> -->
-
-
                <div class="button-wrap">
                   <?php get_template_part('template-parts/components/rmbt_button', null, ['class' => 'rmbt-financing-block-button','title' => 'red more']); ?>
                </div>
