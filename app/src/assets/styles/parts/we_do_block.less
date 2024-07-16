@@ -1,20 +1,20 @@
 .we-do-block-wrapper-section {
   position: relative;
   top: -592px;
-  clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
-  z-index: -1;
+  // clip-path: polygon(0 0, 100% 0, 100% 95%, 0 100%);
+  clip-path: polygon(0 0, 100% 6%, 100% 95%, 0% 100%);
 
-  padding-top: 300px;
+  padding-top: 360px;
 }
 .rmbt-we-do-block-full-width {
-  height: 2568px;
+  height: 2310px;
   &__bg {
     position: absolute;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    z-index: -1;
+    // z-index: -1;
     .wrap-img {
       width: 100%;
       height: 100%;
@@ -26,7 +26,7 @@
   &__row {
     .row-flex();
 
-    margin-bottom: 160px;
+    margin-bottom: 214px;
 
     &:last-child {
       margin-bottom: 0px;
@@ -35,6 +35,7 @@
   &__article-body {
     .col();
     .size(6);
+    z-index: 1;
 
     h2 {
       margin-top: 0px;

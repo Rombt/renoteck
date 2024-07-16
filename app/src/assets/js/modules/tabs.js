@@ -5,7 +5,6 @@ if (tabs) {
     tab.addEventListener('click', e => {
       const tabName = e.target.dataset.tab;
       const tabsContainer = e.target.closest('.tabs');
-
       const tabsTitles = tabsContainer.querySelectorAll('.tabs__title');
       tabsTitles.forEach(tabTitle => {
         if (tabTitle === e.target) {

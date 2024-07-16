@@ -1,0 +1,107 @@
+.wrapper-section-service-areas-block {
+  position: relative;
+  // top: -735px;
+  top: -795px;
+  padding-top: 300px;
+}
+
+.rmbt-service-areas-block-full-width {
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    .wrap-img {
+      width: 100%;
+      height: 100%;
+
+      height: 2190px;
+    }
+  }
+}
+.rmbt-service-areas-block {
+  h2 {
+    width: 1000px;
+    text-align: center;
+    font-size: 60px;
+    margin: 0 auto 56px auto;
+  }
+  &__row {
+    .row-flex();
+    .tabs {
+      .col();
+      .size(12);
+      .shift-left(4);
+
+      &__nav {
+        justify-content: flex-start;
+      }
+
+      &__title {
+      }
+      &__title-active {
+      }
+      &__content {
+        [data-tab-name='alberta'].tabs__body-active {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-between;
+          row-gap: 16px;
+        }
+
+        [data-tab-name='britain-columbia'] {
+          width: 100%;
+          width: 100%;
+          height: 300px;
+          margin: 0 auto;
+          background-color: rgba(147, 180, 125, 0.15);
+        }
+      }
+      &__body {
+      }
+      &__body-active {
+      }
+    }
+    .rmbt-service-areas-tabs {
+    }
+
+    .rmbt-call-to-action-block__col {
+      h2 {
+        font-size: 40px;
+        margin-bottom: 32px;
+      }
+
+      p {
+        margin: 0px 0px 0px 0px;
+      }
+
+      .rmbt-call-to-action-block-button {
+        margin-top: 56px;
+      }
+    }
+  }
+}
+
+.rmbt-service-areas-city-cards {
+  width: 307px;
+  height: 48px;
+  padding: 12px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+
+  svg {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+  }
+  h5 {
+    letter-spacing: 0px;
+    margin: 0px 0px 0px 0px;
+    white-space: nowrap;
+    word-break: keep-all;
+    font-weight: 400 !important;
+  }
+}
