@@ -146,7 +146,7 @@
     justify-content: space-between;
     max-width: 1000px;
 
-    .to(768px,{
+    .to(767px,{
     
       position: absolute;
       left: 40px;
@@ -362,6 +362,10 @@
     height: 1480px;
   });
 
+  .to(480px,{
+    height: 1610px;
+  });
+
   &__overlay {
     position: absolute;
     left: 0;
@@ -391,6 +395,10 @@
     .to(1280px,{
     justify-content: center;
     row-gap: 30px;
+  });
+
+    .to(480px,{
+      row-gap: 56px;
     });
   }
 
@@ -401,16 +409,9 @@
   }
 
   .rmbt-hero-block-text {
-    // .size(7);
     padding-top: 150px;
     .adaptive-prop(padding-top, 50, 0);
     .adaptive-prop(width, 870, 200);
-
-    // .to(1280px,{
-
-    //   .adaptive-prop(padding-top, 50, 0);
-
-    // });
 
     h1 {
       font-family: 'TrajanPro3SemiBold';
@@ -420,9 +421,12 @@
       text-transform: uppercase;
       line-height: 150%;
       margin: 0px 0px 0px 0px;
-
-      .to(1280px,{
       text-align: center;
+
+      .to(480px,{
+      text-align: left;
+      margin-top: 126px;
+      margin-bottom: 24px;
       });
     }
 
@@ -440,6 +444,10 @@
       .to(1280px,{
       text-align: center;
       });
+
+      .to(480px,{
+      text-align: left;
+      });
     }
 
     &__button {
@@ -450,10 +458,6 @@
       margin-top: 60px;
       .adaptive-prop(margin-top, 60, 15);
 
-      // .to(1345px,{
-      // flex-direction: column;
-      // });
-
       .to(1280px,{
         
         justify-content: center;
@@ -461,15 +465,31 @@
 
       .click-button {
         min-width: 240px;
-
         .adaptive-prop(width, 302, 240);
+
+        .to(480px,{
+         width: 100%;
+      });
       }
 
       .massage-button {
         min-width: 270px;
         .adaptive-prop(width, 410, 270);
+
+        .to(480px,{
+         width: 100%;
+      });
       }
+
+      .to(480px,{
+         justify-content: left;
+         margin-top: 126px;
+      });
     }
+
+    .to(480px,{
+    width: 100%;
+    });
   }
 
   &__capture-form {
@@ -481,8 +501,15 @@
     min-width: 510px;
     padding: 40px 30px 30px 40px;
     position: relative;
-    z-index: 1;
+    z-index: 2;
     border-radius: 30px;
+
+    .to(480px,{
+      min-width: 380px;
+    max-width: 380px;
+
+    // margin-top: 56px;
+    });
   }
 }
 

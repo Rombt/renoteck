@@ -50,7 +50,7 @@
                               <?php endif ?>
                            </div>
                            <div class="main-header-icons-row__wrap-blocks"
-                              data-da="#menu-rmbt_header-navigation, 768, last">
+                              data-da="#menu-rmbt_header-navigation, 767, last">
                               <a href="tel:<?php echo rmbt_get_redux_field('rmbt-call-today_number') ?>"
                                  class="main-header-icons-row__block rmbt-call-today">
                                  <svg>

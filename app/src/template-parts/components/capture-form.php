@@ -1,8 +1,9 @@
 <form action="#" class="rmbt-capture-form">
    <h3><?php echo rmbt_get_redux_field('rmbt-capture-form_title') ?></h3>
 
+   <div class="display-steps">Step 1 of 2</div>
 
-   <div class="rmbt-capture-form__left-col">
+   <div class="rmbt-capture-form__left-col wrap-inputs">
       <div class="rmbt-capture-form__wrap-field">
          <label for="name">Name</label>
          <input id="name" type="text">
@@ -16,7 +17,7 @@
          <input id="city" type="text">
       </div>
    </div>
-   <div class="rmbt-capture-form__right-col">
+   <div class="rmbt-capture-form__right-col wrap-inputs">
       <div class="rmbt-capture-form__wrap-field">
          <label for="email">Email</label>
          <input id="email" type="text">
@@ -52,5 +53,7 @@
          <textarea name="massage" id=""></textarea>
       </div>
       <button type="submit" class='rmbt-button rmbt-capture-form__button'>send now</button>
+      <button id="next-step-button" type="button" class='rmbt-button rmbt-capture-form__button '>next step</button>
+      <button id="go-back-button" type="button" class='rmbt-button rmbt-capture-form__button '>go back</button>
    </div>
 </form>

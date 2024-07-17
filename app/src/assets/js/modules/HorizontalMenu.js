@@ -138,7 +138,7 @@ class HorizontalMenu {
     this.iconDropClassOpen = this._clearClassName(
       param.iconDropdownmodifiereOpen || 'icon-drop_open'
     );
-    this.breakPointBurger = param.breakPointBurger || 767;
+    this.breakPointBurger = param.breakPointBurger || 770;
 
     this.visibleClass = this._clearClassName(param.visibleClass || 'rmbt-visible');
     this.hiddenClass = this._clearClassName(param.hiddenClass || 'rmbt-hidden');

@@ -2,9 +2,9 @@
 <div class="rmbt-container">
    <div class="rmbt-hero-block__row">
       <div class="rmbt-hero-block__col rmbt-hero-block-text">
-         <div class="rmbt-hero-block-text__title">
-            <h1><?php echo rmbt_get_redux_field('rmbt-hero-block-title') ?></h1>
-         </div>
+         <!-- <div class="rmbt-hero-block-text__title"> -->
+         <h1><?php echo rmbt_get_redux_field('rmbt-hero-block-title') ?></h1>
+         <!-- </div> -->
          <div class="rmbt-hero-block-text__subtitle">
             <?php  echo rmbt_get_redux_field('rmbt-hero-block-subtitle',1) ?>
          </div>

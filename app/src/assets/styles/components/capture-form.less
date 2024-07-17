@@ -23,10 +23,28 @@
     text-transform: uppercase;
     margin: 0px 0px 40px 0px;
     flex-basis: 80%;
+
+    .to(480px,{
+    margin-bottom: 24px;
+    });
+  }
+
+  .display-steps {
+    display: none;
+    font-size: 16px;
+    font-family: Montserrat;
+    font-weight: 400;
+    color: #fff;
+    text-align: center;
+
+    .to(480px,{
+    display: block;
+    });
   }
 
   h5 {
     .adaptive-prop(font-size, 19, 16);
+    // font-size: 18px;
     font-weight: normal;
     margin: 0px 0px 0px 0px;
   }
@@ -112,8 +130,26 @@
   }
 
   &__button {
-    // width: 530px;
     .adaptive-prop(width, 510, 360);
     margin: 0 auto;
+
+    .to(480px,{
+    width: 311px;
+    });
   }
+
+  #go-back-button,
+  #next-step-button {
+    display: none;
+  }
+
+  #go-back-button {
+    margin-top: 16px;
+    background: none;
+    border: 1px solid #fff;
+  }
+}
+
+#next-step-button {
+  display: none;
 }
