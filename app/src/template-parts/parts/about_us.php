@@ -1,11 +1,11 @@
-<div class="wrapper-section">
+<div class="wrapper-section rmbt-about-us-wrapper-section">
    <div class="rmbt-full-width rmbt-about-us-full-width">
       <div class="rmbt-about-us-full-width__bg wrap-img">
          <img src="<?php echo get_template_directory_uri() ?>/assets/img/about_us-block/about_us_bg_3.jpg" alt="">
          <img src="<?php echo get_template_directory_uri() ?>/assets/img/about_us-block/about-us-block__grd.png" alt="">
       </div>
 
-      <div class="blur-block rmbt-about-us-gallery">
+      <div class="blur-block rmbt-about-us-gallery" data-da=".rmbt-about-us__text, 1280,1">
          <diw class="rmbt-about-us-gallery__img wrap-img">
             <?php echo rmbt_redux_img('rmbt-about-us-gallery_image-1', rmbt_get_redux_field('rmbt-about-us-gallery_imag-1_alt')) ?>
          </diw>

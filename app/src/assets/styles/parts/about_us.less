@@ -1,3 +1,6 @@
+.rmbt-about-us-wrapper-section {
+}
+
 .rmbt-about-us-full-width {
   height: 1640px;
   position: relative;
@@ -23,6 +26,9 @@
     .row-flex();
     flex-direction: column;
     row-gap: 120px;
+    .to(1280px,{
+    padding-right: 60px;
+    });
   }
 
   &__col {
@@ -32,15 +38,23 @@
   &__text {
     display: flex;
     flex-wrap: wrap;
-    .size(6);
+    .adaptive-prop(width, 740, 200);
+
     .section-title {
       flex: 1 0 100%;
       margin-top: 0;
       margin-bottom: 50px;
+
+      .to(1280px,{
+        padding-right: 60px;
+        text-align: center;
+      });
     }
 
     p {
       font-size: 24px;
+      .adaptive-prop(font-size, 24, 18);
+
       font-family: Montserrat;
       font-weight: 500;
       color: #fff;
@@ -48,11 +62,25 @@
       line-height: 160%;
       margin-top: 0;
     }
+
+    .to(1550px,{
+    padding-left: 20px;
+    padding-right: 20px
+    });
+
+    .to(1280px,{
+    width: 100%;
+    justify-content: center;
+    });
   }
 
   &__buttons-block {
     display: flex;
     column-gap: 32px;
+
+    .to(1550px,{
+    margin-top: 30px;
+    });
 
     .rmbt-button {
       height: 76px;
@@ -76,9 +104,11 @@
   position: absolute;
   right: -150px;
   top: 175px;
-  width: 1086px;
-  height: 548px;
   padding: 30px;
+
+  height: 548px;
+  // width: 1086px;
+  .adaptive-prop(width, 1086, 486);
 
   box-sizing: border-box;
   border-radius: 32px;
@@ -94,14 +124,16 @@
   &:after {
     content: '';
     position: absolute;
-    right: 143px;
+    left: 450px;
     top: 0;
-    width: 420px;
+    width: 800px;
     height: 100%;
     background: rgb(0, 0, 0);
     background: linear-gradient(90deg, rgba(0, 0, 0, 0) 0%, rgba(1, 1, 1, 1) 100%);
 
-    // border: 5px solid #0515fd;
+    .to(1280px,{
+    // width: 600px;
+    });
   }
 
   svg {
@@ -115,13 +147,36 @@
 
     fill: #fff;
     stroke: #fff;
+
+    // display: none; //!!
   }
 
   &__img {
+    border-radius: 8px;
     width: 330px;
     height: 234px;
-    border-radius: 8px;
+
+    .adaptive-prop(width, 330, 130);
+    min-width: 247px;
+    .adaptive-prop(height, 234, 200);
   }
+
+  .to(1280px,{
+  position: relative;
+  top: 0px;
+  width: 1086px;
+  right: auto;
+
+  // left:0px;
+
+  min-width: 1086px;
+
+  .adaptive-prop(left, 600, -90);
+  
+});
+
+  // .to(880px,{
+  // });
 }
 .icons-block {
   display: flex;

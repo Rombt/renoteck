@@ -49,21 +49,24 @@
                               <?php the_custom_logo(); ?>
                               <?php endif ?>
                            </div>
-                           <div class="main-header-icons-row__wrap-blocks">
-                              <div class="main-header-icons-row__block rmbt-call-today">
+                           <div class="main-header-icons-row__wrap-blocks"
+                              data-da="#menu-rmbt_header-navigation, 768, last">
+                              <a href="tel:<?php echo rmbt_get_redux_field('rmbt-call-today_number') ?>"
+                                 class="main-header-icons-row__block rmbt-call-today">
                                  <svg>
                                     <use
                                        xlink:href="<?php echo get_template_directory_uri() ?>/assets/img/icons/sprite.svg#phone_1">
                                     </use>
                                  </svg>
-
                                  <div class="rmbt-main-header__block-text">
-                                    <p><?php echo rmbt_get_redux_field('rmbt-call-today_title') ?></p>
-                                    <p><?php echo rmbt_redux_field_to_ul('rmbt-call-today_number', 'tel', '', ''); ?>
+                                    <p><?php echo rmbt_get_redux_field('rmbt-call-today_title'); ?></p>
+                                    <p><?php echo rmbt_get_redux_field('rmbt-call-today_number'); ?>
                                     </p>
                                  </div>
-                              </div>
-                              <div class="main-header-icons-row__block rmbt-instagram">
+                              </a>
+
+                              <a href="https://www.instagram.com/<?php echo rmbt_get_redux_field('rmbt-instagram_nick') ?>"
+                                 class="main-header-icons-row__block rmbt-instagram">
                                  <svg>
                                     <use
                                        xlink:href="<?php echo get_template_directory_uri() ?>/assets/img/icons/sprite.svg#instagram_1">
@@ -73,8 +76,10 @@
                                     <p><?php echo rmbt_get_redux_field('rmbt-instagram_title') ?></p>
                                     <p><?php echo rmbt_get_redux_field('rmbt-instagram_nick') ?></p>
                                  </div>
-                              </div>
-                              <div class="main-header-icons-row__block rmbt-facebook">
+                              </a>
+
+                              <a href="https://www.facebook.com/<?php echo rmbt_get_redux_field('rmbt-facebook_nick') ?>"
+                                 class="main-header-icons-row__block rmbt-facebook">
                                  <svg>
                                     <use
                                        xlink:href="<?php echo get_template_directory_uri() ?>/assets/img/icons/sprite.svg#facebook_1">
@@ -84,15 +89,26 @@
                                     <p><?php echo rmbt_get_redux_field('rmbt-facebook_title') ?></p>
                                     <p><?php echo rmbt_get_redux_field('rmbt-facebook_nick') ?></p>
                                  </div>
-                              </div>
+                              </a>
                            </div>
                         </div>
                      </div>
-                     <div class="rmbt-main-header__row main-header-nav">
+                     <div class="rmbt-main-header__row main-header-nav" data-da=".rmbt-main-header__col, 768">
                         <div class="main-header-nav__col">
 
                            <?php if (has_nav_menu('rmbt-header_nav')) { ?>
                            <div class="cont-main-header-menu">
+                              <div class="top-line-header-menu-mobile"
+                                 data-da=".menu-rmbt_header-navigation-container, 480, first">
+
+                                 <div class="rmbt-main-header-logo">
+                                    <?php if (has_custom_logo()) : ?>
+                                    <?php the_custom_logo(); ?>
+                                    <?php endif ?>
+                                 </div>
+
+
+                              </div>
                               <?php wp_nav_menu(
                                  array(
                                     'theme_location' => 'rmbt-header_nav',
