@@ -1,6 +1,6 @@
 .wrapper-section-financing-block {
   position: relative;
-  top: -20px;
+  top: -753px;
   z-index: auto;
 
   * {
@@ -9,6 +9,15 @@
 }
 .rmbt-financing-block-full-width {
   height: 1400px;
+
+  .to(1580px,{
+    height: 1570px;
+  });
+
+  .to(1024px,{
+    .adaptive-prop(height, 1996, 1995);
+  });
+
   &__bg {
     position: absolute;
     left: 0;
@@ -58,6 +67,8 @@
 
   p {
     margin: 0px 0px 0px 0px;
+    padding-left: 10px;
+    padding-right: 10px;
     width: 100%;
   }
 }
@@ -65,16 +76,25 @@
 .rmbt-financing-block-wrap-cards {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  column-gap: 40px;
+  // row-gap: 24px;
+  .adaptive-prop(row-gap, 24, 128);
 }
 
 .rmbt-financing-block-card {
-  width: 480px;
-  height: 354px;
+  // width: 480px;
+  // height: 354px;
+  .adaptive-prop(width, 480, 310);
+  .adaptive-prop(height, 354, 190);
 
   svg {
-    width: 128px;
-    height: 128px;
+    // width: 128px;
+    // height: 128px;
+
+    .adaptive-prop(width, 128, 68);
+    .adaptive-prop(height, 128, 68);
+
     margin: 0 auto;
     display: block;
     position: relative;
@@ -83,6 +103,7 @@
 
   h4 {
     font-size: 24px;
+    .adaptive-prop(font-size, 24, 18);
     font-family: TrajanPro3Bold;
     font-weight: 400;
     color: #fff;
@@ -103,6 +124,7 @@
 
   &__subtitle {
     font-size: 20px;
+    .adaptive-prop(font-size, 20, 16);
     color: #a41c35;
     font-weight: 500;
     font-family: 'Montserrat';
@@ -113,7 +135,10 @@
 
   &__text {
     font-family: 'Montserrat';
-    font-size: 20px;
+
+    // font-size: 20px;
+    .adaptive-prop(font-size, 20, 16);
+
     font-weight: 400;
     color: #fff;
     text-transform: capitalize;
