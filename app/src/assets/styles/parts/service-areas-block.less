@@ -1,11 +1,12 @@
 .wrapper-section-service-areas-block {
   position: relative;
-  // top: -735px;
-  top: -795px;
+  top: -1181px;
   padding-top: 300px;
 }
 
 .rmbt-service-areas-block-full-width {
+  height: 2190px;
+
   &__bg {
     position: absolute;
     left: 0;
@@ -16,20 +17,25 @@
     .wrap-img {
       width: 100%;
       height: 100%;
-
-      height: 2190px;
     }
   }
 }
 .rmbt-service-areas-block {
+  height: 100%;
+
   h2 {
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
     text-align: center;
-    font-size: 60px;
+    .adaptive-prop(font-size, 60, 22);
+
     margin: 0 auto 56px auto;
   }
   &__row {
     .row-flex();
+    .adaptive-prop(height, 1960, 2100);
+
+    position: relative;
     .tabs {
       .col();
       .size(12);
@@ -37,6 +43,7 @@
 
       &__nav {
         justify-content: flex-start;
+        flex-direction: row;
       }
 
       &__title {
@@ -45,10 +52,10 @@
       }
       &__content {
         [data-tab-name='alberta'].tabs__body-active {
-          display: flex;
-          flex-wrap: wrap;
-          justify-content: space-between;
-          row-gap: 16px;
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-row-gap: 16px;
+          grid-column-gap: 40px;
         }
 
         [data-tab-name='britain-columbia'] {
@@ -68,17 +75,49 @@
     }
 
     .rmbt-call-to-action-block__col {
+      position: absolute;
+      left: 50%;
+      bottom: 60px;
+      transform: translate(-50%, 0%);
+      .adaptive-prop(width, 1520, 300);
+      .adaptive-prop(height, 588, 622);
+
+      padding-left: 16px;
+      padding-right: 16px;
+
+      .to(370px,{
+        padding: 32px 16px 32px 16px;
+      });
+
       h2 {
-        font-size: 40px;
+        width: 100%;
+        .adaptive-prop(font-size, 40, 22);
+        letter-spacing: 0px;
+
         margin-bottom: 32px;
+        .to(1024px,{
+         margin-bottom: 16px;
+          });
       }
 
       p {
+        letter-spacing: 0px;
+        padding: 0px 0px 0px 0px;
         margin: 0px 0px 0px 0px;
       }
+      .rmbt-call-to-action-block__body {
+        width: auto;
+      }
 
+      .button-wrap {
+        .to(480px,{
+        margin-top: 30px;
+        });
+      }
       .rmbt-call-to-action-block-button {
-        margin-top: 56px;
+        .adaptive-prop(width, 320, 260);
+        .adaptive-prop(height, 76, 56);
+        .adaptive-prop(line-height, 76, 56);
       }
     }
   }
@@ -91,7 +130,6 @@
   box-sizing: border-box;
   display: flex;
   align-items: center;
-
   svg {
     width: 24px;
     height: 24px;

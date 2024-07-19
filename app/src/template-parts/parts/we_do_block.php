@@ -26,14 +26,14 @@
             </div>
          </article>
 
-         <article class="rmbt-we-do-block__row">
-            <div class="rmbt-we-do-block__article-body">
+         <article class="rmbt-we-do-block__row ">
+            <div class="rmbt-we-do-block__article-body flex-order-body">
                <?php get_template_part('template-parts/components/title', 'section', ['title' => rmbt_get_redux_field('rmbt-we-do-block_article-title-2')]); ?>
                <div class="font-p rmbt-we-do-block__article-text">
                   <?php echo rmbt_get_redux_field('rmbt-we-do-block_article-text-2') ?>
                </div>
             </div>
-            <div class="rmbt-we-do-block__img">
+            <div class="rmbt-we-do-block__img flex-order-img">
                <img class="rmbt-we-do-block__img-bg img-bg-red"
                   src="<?php echo get_template_directory_uri() ?>/assets/img/we-do-block/img_bg_red.jpg" alt="">
                <img class="rmbt-we-do-block__img-bg img-bg-blue"
