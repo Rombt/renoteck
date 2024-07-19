@@ -1,7 +1,11 @@
 .wrapper-section-our-projects {
-  height: 1440px;
+  // height: 1440-150px;
   position: relative;
-  top: 155px;
+  // top: 155px;
+
+  top: -500px;
+
+  // border: 10px solid #0515fd;
 }
 
 .rmbt-our-projects-full-width {
@@ -9,32 +13,55 @@
     box-sizing: border-box;
   }
   position: relative;
-  top: -150px;
   padding-top: 160px;
+
+  .adaptive-prop(height, 1590, 1200);
+
+  // border: 5px solid #05fd43;
 
   &__bg {
     position: absolute;
     left: 0px;
+    top: 650px;
+    // .adaptive-prop(top, 650, 0);
+
     width: 100%;
-    height: 1280px;
+    height: 65%;
+    // .adaptive-prop(height, 1100, 1600);
+
+    // height: 1280px;
+    // height: 1090px;
+    // .adaptive-prop(height, 1090, 450);
+
     border-radius: 64px;
     z-index: 1;
+
+    .to(1280px,{
+      
+      // height: 785px;
+});
+
     .wrap-img {
       width: 100%;
       height: 100%;
+      // height: 1440px;
       border-radius: 64px;
     }
+
+    // display: none;
   }
 }
 .rmbt-our-projects {
   padding-left: 0px;
   padding-right: 0px;
 
+  // display: none;
+
   &__row {
     .row-flex();
 
     position: relative;
-    top: -610px;
+    // top: -610px;
     display: flex;
     flex-wrap: wrap;
     margin-left: -20px;
@@ -45,7 +72,7 @@
 
     .section-title {
       text-align: center;
-      font-size: 60px;
+      // font-size: 60px;
       width: 100%;
       margin-bottom: 24px;
     }
@@ -54,6 +81,7 @@
       margin: 0px 0px 0px 0px;
       width: 100%;
       position: relative;
+      padding: 0px 10px 0px 10px;
     }
   }
   &__col {
@@ -81,10 +109,22 @@
   svg.arrow-left {
     left: -180px;
     transform: translate(0%, -50%) rotate(-90deg);
+
+    .to(1440px,{
+      display: none;
+    });
   }
   svg.arrow-right {
     right: -180px;
     transform: translate(0%, -50%) rotate(90deg);
+
+    .to(1440px,{
+    
+    });
+  }
+
+  .rmbt-our-projects-button-wrap {
+    width: 100%;
   }
   .rmbt-our-projects-button {
     width: 274px;
@@ -98,14 +138,28 @@
 }
 
 .tabs {
-  height: 736px;
-  margin-bottom: 100px;
+  margin-bottom: 20px !important;
+  position: relative;
+  .adaptive-prop(height, 736,350);
+  .adaptive-prop(margin-bottom, 100, 30);
+
+  .to(1024px,{
+    .adaptive-prop(height, 736,580);
+  
+  });
 
   &__nav {
     display: flex;
     column-gap: 42px;
     justify-content: center;
     margin-bottom: 56px;
+
+    .to(1024px,{
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    
+    });
   }
   &__title {
     all: unset;
@@ -116,9 +170,18 @@
     text-align: center;
     margin-top: 0;
     cursor: pointer;
+
+    width: max-content;
   }
   &__content {
     width: 100%;
+    height: 100%;
+
+    .to(1024px,{
+    });
+
+    [data-tab-name='residentail'] {
+    }
 
     [data-tab-name='commercial'] {
       background-color: rgba(250, 223, 174, 0.2);
@@ -139,6 +202,14 @@
   &__body {
     width: 100%;
     padding: 0px 0px 0px 0px;
+
+    .tabs-residentail-wrap {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 30px;
+    }
   }
 
   &__title-active {
@@ -148,6 +219,8 @@
   }
 }
 .rmbt-our-projects-tabs {
+  width: 100%;
+  overflow: hidden;
 }
 
 .rmbt-our-projects-picture-card {
@@ -159,21 +232,28 @@
   }
   &__text {
     width: 224px;
-    height: 90px;
-    padding-top: 18px;
-    padding-bottom: 21px;
+
     margin: 0 auto;
 
     border-radius: 0 0 16px 16px;
     border-top: 1px solid rgba(255, 255, 255, 0);
 
+    .adaptive-prop(padding-top, 18, 0);
+    .adaptive-prop( padding-bottom, 21, 0);
+
+    .to(940px,{
+    padding-top:8px;
+    padding-bottom:8px;
+    });
+
     h4 {
       font-family: 'TrajanPro3SemiBold';
-      line-height: 35px;
-      font-size: 20px;
       text-align: center;
       color: #fff;
-      margin: 0px 0px 0px 0px;
+      margin: 0px 0px 5px 0px;
+
+      .adaptive-prop(line-height, 35, 0);
+      .adaptive-prop(font-size, 20, 12);
     }
     p {
       font-size: 16px;
@@ -183,7 +263,11 @@
       text-align: center;
       text-transform: capitalize;
       vertical-align: middle;
-      line-height: 25px;
+
+      .adaptive-prop(line-height, 25, 0);
+      .to(980px,{
+      line-height:100%;
+      });
     }
   }
 }
@@ -191,90 +275,113 @@
 .rmbt-our-projects-picture-wrap-cards {
   display: flex;
   margin-bottom: 80px;
+  margin: 0 auto;
+
+  .adaptive-prop(width, 1500, 280);
+  min-width: 815px;
 
   .rmbt-our-projects-main-card {
-    right: 18px;
     z-index: 3;
+    .adaptive-prop(left, -20, -160);
     .rmbt-our-projects-picture-card__img {
-      width: 360px;
-      height: 384px;
+      // width: 360px;
+      // height: 384px;
+      .adaptive-prop(width, 360, 160);
+      .adaptive-prop(height, 384, 184);
+      min-width: 247px;
+      min-height: 258px;
     }
 
     .rmbt-our-projects-picture-card__text {
-      width: 280px;
-      height: 112px;
+      // width: 280px;
+      // height: 112px;
+
+      .adaptive-prop(width, 280, 150);
+      .adaptive-prop(height, 112, -100);
+      min-height: 60px;
     }
   }
 
   .rmbt-our-projects-first-card {
     top: 25px;
     .rmbt-our-projects-picture-card__img {
-      width: 320px;
-      height: 344px;
+      // width: 320px;
+      // height: 344px;
+      .adaptive-prop(width, 320, 120);
+      .adaptive-prop(height, 344, 144);
+      min-width: 207px;
+      min-height: 207px;
     }
 
     .rmbt-our-projects-picture-card__text {
-      width: 256px;
-      height: 102px;
+      // width: 256px;
+      // height: 102px;
+      .adaptive-prop(width, 256, 100);
+      .adaptive-prop(height, 112, -100);
+      min-height: 60px;
     }
   }
   .left-first-card {
-    right: 10px;
     z-index: 2;
+    .adaptive-prop(left, -10, -100);
   }
   .right-first-card {
-    right: 30px;
     z-index: 1;
+    .adaptive-prop(left, -20, -220);
   }
 
   .rmbt-our-projects-second-card {
     top: 51px;
+
     .rmbt-our-projects-picture-card__img {
-      width: 280px;
-      height: 304px;
+      // width: 280px;
+      // height: 304px;
+      .adaptive-prop(width, 280, 80);
+      .adaptive-prop(height, 304, 104);
+      min-width: 167px;
+      min-height: 167px;
     }
 
     .rmbt-our-projects-picture-card__text {
-      width: 224px;
-      height: 90px;
+      // width: 224px;
+      // height: 90px;
+
+      .adaptive-prop(width, 224, 80);
+      .adaptive-prop(height, 112, -100);
+      min-height: 60px;
     }
   }
 
   .right-second-card {
-    right: 40px;
+    .adaptive-prop(left, -20, -320);
   }
 }
 
 .rmbt-our-projects-video-wrap-cards {
   width: 100%;
-  // height: 592px;
   position: relative;
 
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   row-gap: 80px;
-
-  .arrow-left {
-    left: -55px !important;
-    top: 50% !important;
-  }
-  .arrow-right {
-    right: -55px !important;
-    top: 50% !important;
-  }
-
-  .button-wrap {
-    width: 100%;
-  }
+  column-gap: 30px;
 
   .rmbt-our-projects-button {
   }
 }
+.button-wrap {
+  width: 100%;
+  margin-top: 40px;
+}
 
 .rmbt-our-projects-video-card {
-  width: 480px;
-  height: 320px;
   border-radius: 37px;
+  // width: 480px;
+  // height: 320px;
+  .adaptive-prop(width, 480, 254);
+  .adaptive-prop(height, 320, 280);
+
+  min-width: 254px;
+  min-height: 280px;
 }

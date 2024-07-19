@@ -33,7 +33,9 @@ nextStepButton.addEventListener('click', e => {
   });
 
   goBackButton.style.display = 'block';
+  submitButton.style.display = 'block';
   displaySteps.innerHTML = 'Step 2 of 2';
+  nextStepButton.style.display = 'none';
 });
 
 goBackButton.addEventListener('click', e => {
@@ -41,6 +43,8 @@ goBackButton.addEventListener('click', e => {
     radioButton.style.display = 'none';
   });
   goBackButton.style.display = 'none';
+  submitButton.style.display = 'none';
+  nextStepButton.style.display = 'block';
 
   nl_wrapInputs.forEach(wrapInput => {
     wrapInput.style.display = 'block';
@@ -57,6 +61,7 @@ function captureFormMod() {
     submitButton.style.display = 'none';
     nextStepButton.style.display = 'block';
     displaySteps.style.display = 'block';
+    displaySteps.innerHTML = 'Step 1 of 2';
   } else if (window.innerWidth > 480) {
     nl_RadioButtons.forEach(radioButton => {
       radioButton.style.display = 'block';

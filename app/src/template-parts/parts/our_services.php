@@ -35,7 +35,10 @@
                </div>
                <div class="blur-block rmbt-our-services-card__text">Industrial</div>
             </div>
-            <?php get_template_part('template-parts/components/rmbt_button', null, ['class' => 'rmbt-our-services-button','title' => 'go to renoteck exteriors']); ?>
+
+            <div class="rmbt-our-services-button-wrap">
+               <?php get_template_part('template-parts/components/rmbt_button', null, ['class' => 'rmbt-our-services-button','title' => 'go to renoteck exteriors']); ?>
+            </div>
          </div>
       </section>
    </div>

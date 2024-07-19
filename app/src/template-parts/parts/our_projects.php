@@ -25,80 +25,88 @@
                   <div class="tabs__content">
                      <div class="tabs__body tabs__body-active" data-tab-name="residentail">
 
-                        <div class="rmbt-our-projects-picture-wrap-cards">
-                           <svg class="arrow-left">
-                              <use
-                                 xlink:href="<?php echo get_template_directory_uri() ?>/assets/img/icons/sprite.svg#arrow_2">
-                              </use>
-                           </svg>
+                        <div class="tabs-residentail-wrap">
+                           <div class="rmbt-our-projects-picture-wrap-cards">
+                              <svg class="arrow-left">
+                                 <use
+                                    xlink:href="<?php echo get_template_directory_uri() ?>/assets/img/icons/sprite.svg#arrow_2">
+                                 </use>
+                              </svg>
 
-                           <div class="rmbt-our-projects-picture-card rmbt-our-projects-second-card left-second-card">
-                              <div class="wrap-img rmbt-our-projects-picture-card__img">
-                                 <img
-                                    src="<?php echo get_template_directory_uri() ?>/assets/img/our-projects-block/our-projects-picture_1.jpg"
-                                    alt="">
+                              <div
+                                 class="rmbt-our-projects-picture-card rmbt-our-projects-second-card left-second-card">
+                                 <div class="wrap-img rmbt-our-projects-picture-card__img">
+                                    <img
+                                       src="<?php echo get_template_directory_uri() ?>/assets/img/our-projects-block/our-projects-picture_1.jpg"
+                                       alt="">
+                                 </div>
+                                 <div class="blur-block rmbt-our-projects-picture-card__text">
+                                    <h4>snap-look</h4>
+                                    <p> Panel system </p>
+                                 </div>
                               </div>
-                              <div class="blur-block rmbt-our-projects-picture-card__text">
-                                 <h4>snap-look</h4>
-                                 <p> Panel system </p>
+
+                              <div class="rmbt-our-projects-picture-card rmbt-our-projects-first-card left-first-card">
+                                 <div class="wrap-img rmbt-our-projects-picture-card__img">
+                                    <img
+                                       src="<?php echo get_template_directory_uri() ?>/assets/img/our-projects-block/our-projects-picture_2.jpg"
+                                       alt="">
+                                 </div>
+                                 <div class="blur-block rmbt-our-projects-picture-card__text">
+                                    <h4>snap-look</h4>
+                                    <p> Panel system </p>
+                                 </div>
                               </div>
+
+                              <div class="rmbt-our-projects-picture-card rmbt-our-projects-main-card">
+                                 <div class="wrap-img rmbt-our-projects-picture-card__img">
+                                    <img
+                                       src="<?php echo get_template_directory_uri() ?>/assets/img/our-projects-block/our-projects-picture_3.jpg"
+                                       alt="">
+                                 </div>
+                                 <div class="blur-block rmbt-our-projects-picture-card__text">
+                                    <h4>snap-look</h4>
+                                    <p> Panel system </p>
+                                 </div>
+                              </div>
+
+                              <div class="rmbt-our-projects-picture-card rmbt-our-projects-first-card right-first-card">
+                                 <div class="wrap-img rmbt-our-projects-picture-card__img">
+                                    <img
+                                       src="<?php echo get_template_directory_uri() ?>/assets/img/our-projects-block/our-projects-picture_4.jpg"
+                                       alt="">
+                                 </div>
+                                 <div class="blur-block rmbt-our-projects-picture-card__text">
+                                    <h4>snap-look</h4>
+                                    <p> Panel system </p>
+                                 </div>
+                              </div>
+
+                              <div
+                                 class="rmbt-our-projects-picture-card rmbt-our-projects-second-card right-second-card">
+                                 <div class="wrap-img rmbt-our-projects-picture-card__img">
+                                    <img
+                                       src="<?php echo get_template_directory_uri() ?>/assets/img/our-projects-block/our-projects-picture_5.jpg"
+                                       alt="">
+                                 </div>
+                                 <div class="blur-block rmbt-our-projects-picture-card__text">
+                                    <h4>snap-look</h4>
+                                    <p> Panel system </p>
+                                 </div>
+                              </div>
+
+                              <svg class="arrow-right">
+                                 <use
+                                    xlink:href="<?php echo get_template_directory_uri() ?>/assets/img/icons/sprite.svg#arrow_2">
+                                 </use>
+                              </svg>
                            </div>
 
-                           <div class="rmbt-our-projects-picture-card rmbt-our-projects-first-card left-first-card">
-                              <div class="wrap-img rmbt-our-projects-picture-card__img">
-                                 <img
-                                    src="<?php echo get_template_directory_uri() ?>/assets/img/our-projects-block/our-projects-picture_2.jpg"
-                                    alt="">
-                              </div>
-                              <div class="blur-block rmbt-our-projects-picture-card__text">
-                                 <h4>snap-look</h4>
-                                 <p> Panel system </p>
-                              </div>
-                           </div>
+                           <div class="rmbt-our-projects-button-wrap">
 
-                           <div class="rmbt-our-projects-picture-card rmbt-our-projects-main-card">
-                              <div class="wrap-img rmbt-our-projects-picture-card__img">
-                                 <img
-                                    src="<?php echo get_template_directory_uri() ?>/assets/img/our-projects-block/our-projects-picture_3.jpg"
-                                    alt="">
-                              </div>
-                              <div class="blur-block rmbt-our-projects-picture-card__text">
-                                 <h4>snap-look</h4>
-                                 <p> Panel system </p>
-                              </div>
+                              <?php get_template_part('template-parts/components/rmbt_button', null, ['class' => 'rmbt-our-projects-button','title' => 'more case']); ?>
                            </div>
-
-                           <div class="rmbt-our-projects-picture-card rmbt-our-projects-first-card right-first-card">
-                              <div class="wrap-img rmbt-our-projects-picture-card__img">
-                                 <img
-                                    src="<?php echo get_template_directory_uri() ?>/assets/img/our-projects-block/our-projects-picture_4.jpg"
-                                    alt="">
-                              </div>
-                              <div class="blur-block rmbt-our-projects-picture-card__text">
-                                 <h4>snap-look</h4>
-                                 <p> Panel system </p>
-                              </div>
-                           </div>
-
-                           <div class="rmbt-our-projects-picture-card rmbt-our-projects-second-card right-second-card">
-                              <div class="wrap-img rmbt-our-projects-picture-card__img">
-                                 <img
-                                    src="<?php echo get_template_directory_uri() ?>/assets/img/our-projects-block/our-projects-picture_5.jpg"
-                                    alt="">
-                              </div>
-                              <div class="blur-block rmbt-our-projects-picture-card__text">
-                                 <h4>snap-look</h4>
-                                 <p> Panel system </p>
-                              </div>
-                           </div>
-
-                           <svg class="arrow-right">
-                              <use
-                                 xlink:href="<?php echo get_template_directory_uri() ?>/assets/img/icons/sprite.svg#arrow_2">
-                              </use>
-                           </svg>
                         </div>
-                        <?php get_template_part('template-parts/components/rmbt_button', null, ['class' => 'rmbt-our-projects-button','title' => 'more case']); ?>
 
                      </div>
                      <div class="tabs__body" data-tab-name="commercial">
@@ -132,14 +140,14 @@
                         src="<?php echo get_template_directory_uri() ?>/assets/img/our-projects-block/our-projects-video_3.jpg"
                         alt="">
                   </div>
-                  <div class="button-wrap">
-                     <?php get_template_part('template-parts/components/rmbt_button', null, ['class' => 'rmbt-our-projects-button','title' => 'more case']); ?>
-                  </div>
 
                   <svg class="arrow-right">
                      <use xlink:href="<?php echo get_template_directory_uri() ?>/assets/img/icons/sprite.svg#arrow_2">
                      </use>
                   </svg>
+               </div>
+               <div class="button-wrap">
+                  <?php get_template_part('template-parts/components/rmbt_button', null, ['class' => 'rmbt-our-projects-button','title' => 'more case']); ?>
                </div>
             </div>
 
