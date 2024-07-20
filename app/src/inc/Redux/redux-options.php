@@ -153,6 +153,7 @@ require_once dirname(__FILE__) . '/sections/financing-block.php';
 require_once dirname(__FILE__) . '/sections/testimonials-block.php';
 require_once dirname(__FILE__) . '/sections/we_do_block.php';
 require_once dirname(__FILE__) . '/sections/service-areas-block.php';
+require_once dirname(__FILE__) . '/sections/finansing-about-block.php';
 
 
 
