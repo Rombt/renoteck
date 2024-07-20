@@ -18,10 +18,13 @@ const displaySteps = captureForm.querySelector('.display-steps');
 const nextStepButton = captureForm.querySelector('#next-step-button');
 const goBackButton = captureForm.querySelector('#go-back-button');
 
-console.log('captureForm = ', captureForm);
-
-window.addEventListener('resize', captureFormMod);
+// mainHeightCorrect();
 if (window.innerWidth <= 480) captureFormMod();
+
+window.addEventListener('resize', e => {
+  captureFormMod();
+  // mainHeightCorrect();
+});
 
 nextStepButton.addEventListener('click', e => {
   nl_RadioButtons.forEach(radioButton => {
@@ -76,6 +79,18 @@ function captureFormMod() {
     displaySteps.style.display = 'none';
 
     submitButton.style.display = 'block';
-    radioButton.style.display = 'block';
   }
 }
+
+// function mainHeightCorrect() {
+//   const main = document.querySelector('main');
+//   const nl_childrenMain = main.children;
+
+//   const sumHeightChildrenMain = [...main.children].reduce((accumulator, child) => {
+//     return accumulator + child.getBoundingClientRect().height;
+//   }, 0);
+
+//   main.style.height = `${sumHeightChildrenMain}px`;
+
+//   console.log('main = ', sumHeightChildrenMain);
+// }

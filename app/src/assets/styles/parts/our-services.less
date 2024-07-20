@@ -1,59 +1,53 @@
+.rmbt-our-services-wrapper-section {
+}
+
 .rmbt-our-services-full-width {
   position: relative;
-  top: -85px;
-
-  // border: 3px solid #fd9a05;
 
   &__bg {
     position: absolute;
     left: 0;
-    // top: 467px;
+    top: -60px;
     width: 100%;
-    height: 100%;
 
     &:after {
       content: '';
 
       position: absolute;
       left: 0;
-      bottom: -298px;
-      // transform: translate(0,-50%);
+      bottom: 0;
       width: 100%;
-      // height: 874px;
       height: 1382px;
 
       background-color: rgba(0, 0, 0, 0.55);
       clip-path: polygon(0 53.2%, 100% 35.5%, 100% 100%, 0% 100%);
+
+      .to(1024px,{
+        height: 2625px;
+        clip-path: polygon(0 44.5%, 100% 35.5%, 100% 100%, 0% 100%);
+      
+      });
     }
 
     .wrap-img {
-      width: 100%;
       height: 1382px;
-
-      // border: 5px solid #d0fd05;
+      width: 100%;
 
       .to(1024px,{
-    height: 2235px;
-
-    // .adaptive-prop(height, 1750, 2239);
-    
-    });
+      height: 2187px;
+      });
     }
   }
 
   .bg-decoration {
     position: absolute;
     left: 0px;
+    top: -60px;
     height: 738px;
     width: 100%;
     background-color: rgba(164, 28, 53, 1);
     border-radius: 64px 64px 0px 0px;
     clip-path: polygon(0 0, 100% 0, 100% 67%, 0% 100%);
-
-    .to(1024px,{
-    height: 1600px;
-    clip-path: polygon(0 0, 100% 0, 100% 84.8%, 0% 100%);
-    });
   }
 }
 

@@ -2,80 +2,16 @@
 }
 
 .rmbt-about-us-full-width {
-  height: 1500px;
   position: relative;
-  top: -122px;
-  border: 1px solid #080808;
 
-  .to(1282px,{
-   height: 1815px;
-  });
-
-  .to(1028px,{
-   height: 2200px;
-  });
-
-  .to(870px,{
-   height: 2260px;
-  });
-
-  .to(690px,{
-   height: 2310px;
-  });
-
-  .to(620px,{
-   height: 2380px;
-  });
-
-  .to(480px,{
-   height: 2450px;
-  });
-
-  .to(390px,{
-   height: 2500px;
-  });
-
-  .to(360px,{
-   height: 2580px;
-  });
+  .adaptive-prop(height, 1500, 2700);
 
   &__bg {
     position: absolute;
     left: 0;
-    top: -80px;
+    top: 0px;
+    bottom: 0px;
     width: 100%;
-    height: 1700px;
-
-    .to(1282px,{
-       height: 1980px;
-      });
-
-    .to(1028px,{
-       height: 2365px;
-      });
-    .to(870px,{
-       height: 2420px;
-      });
-
-    .to(690px,{
-       height: 2475px;
-      });
-
-    .to(620px,{
-       height: 2536px;
-      });
-
-    .to(480px,{
-       height: 2600px;
-      });
-
-    .to(390px,{
-    height: 2670px;
-    });
-
-    .to(360px,{
-    height: 2750px;
-    });
   }
 }
 .rmbt-about-us {

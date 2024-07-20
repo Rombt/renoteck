@@ -1,4 +1,4 @@
-<div class="wrapper-section">
+<div class="wrapper-section rmbt-our-services-wrapper-section">
    <div class="rmbt-full-width rmbt-our-services-full-width">
       <div class="bg-decoration"></div>
 

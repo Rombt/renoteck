@@ -1,6 +1,5 @@
 .wrapper-section-our-projects {
   position: relative;
-  top: -500px;
 }
 
 .rmbt-our-projects-full-width {
@@ -9,16 +8,15 @@
   }
   position: relative;
   padding-top: 160px;
-  .adaptive-prop(height, 1590, 1265);
-
-  // border: 10px solid #0515fd;
+  height: 923 + 504 - 164px;
+  .adaptive-prop(height, 1100, 890);
 
   &__bg {
     position: absolute;
     left: 0px;
-    top: 650px;
+    bottom: 0px;
     width: 100%;
-    height: 65%;
+    height: 1280px;
 
     border-radius: 64px;
     z-index: 1;
@@ -33,6 +31,10 @@
 .rmbt-our-projects {
   padding-left: 0px;
   padding-right: 0px;
+
+  height: 100%;
+  position: relative;
+  top: -600px;
 
   &__row {
     .row-flex();

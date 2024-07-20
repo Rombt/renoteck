@@ -1,10 +1,7 @@
 .rmbt-full-width-footer {
   color: #fff;
   background-color: #000;
-  height: 603px;
   position: relative;
-
-  margin-top: 4000px; //!!
 }
 .rmbt-container {
 }
@@ -12,8 +9,19 @@
   &__row {
     .row-flex();
 
+    .to(1024px,{
+    justify-content: center;
+    });
+
+    .to(780px,{
+    flex-direction: column;
+    padding-top: 120px;
+    });
+
     h3 {
       font-size: 27px;
+      .adaptive-prop(font-size, 27, 22);
+
       font-family: TrajanPro3Regular;
       font-weight: 400;
       color: #a41c35;
@@ -27,17 +35,32 @@
   &__col {
     height: 529px;
     .col();
+
+    .to(780px,{
+      height: auto;
+      width: min-content !important;
+      padding-top: 0px !important;
+      padding-bottom: 60px;
+    });
   }
   &__about {
     .size(4);
     padding-top: 86px;
 
+    .to(1024px,{
+      .adaptive-prop(width, 300, 200);
+    });
+
+    .to(780px,{
+      .adaptive-prop(width, 1500, 200) !important;;
+    });
+
     svg {
       width: 46px;
       height: 46px;
 
-      fill: #fff;
-      stroke: #fff;
+      // fill: #fff;
+      // stroke: #fff;
     }
 
     .text {
@@ -51,14 +74,54 @@
     .rmbt-social-networks {
       margin-top: 20px;
     }
+
+    img {
+      .adaptive-prop(width, 487, 236);
+      .adaptive-prop(height, 132, 64);
+
+      .to(1024px,{
+        .adaptive-prop(width, 487, 136);
+        .adaptive-prop(height, 132, 24);
+      });
+
+      .to(780px,{
+        // .adaptive-prop(width, 487, 136);
+        // .adaptive-prop(height, 132, 24);
+        width: 240px;
+        height: 60px;
+      });
+    }
   }
   &__nav {
     .size(5);
     padding-top: 110px;
+
+    .to(1024px,{
+      .adaptive-prop(width, 650, 50);
+
+     
+      
+    });
+
+    // .to(1024px,{
+
+    // });
   }
   &__contacts {
     .size(3);
     padding-top: 110px;
+
+    .to(1024px,{
+    .adaptive-prop(width, 400, 100);
+    
+    });
+
+    // .to(1024px,{
+
+    //   padding-top: 0px;
+    //   padding-bottom: 60px;
+
+    // });
 
     ul {
       list-style: none;
@@ -67,6 +130,7 @@
       svg {
         width: 46px;
         height: 46px;
+        flex-shrink: 0;
       }
 
       li {
@@ -91,6 +155,12 @@
 
 .rmbt-cont-vertical-menu {
   nav {
+    .to(780px,{
+      & > ul {
+        align-items: flex-start !important;
+      }
+    
+    });
     ul {
       list-style: none;
       padding: 0px 20px 0px 20px;
