@@ -7,6 +7,14 @@
   position: relative;
   height: 1340px;
 
+  .to(1440px,{
+       height: 1520px;
+    });
+
+  .to(780px,{
+    .adaptive-prop(height, 2000, 2050) !important;
+  });
+
   &__bg {
     position: absolute;
     width: 100%;
