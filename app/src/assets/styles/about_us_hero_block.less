@@ -1,0 +1,112 @@
+.rmbt-about-us-hero-block-wrapper-section {
+}
+.rmbt-about-us-hero-block-full-width {
+  position: relative;
+  height: 920px;
+  padding-top: 115px;
+  .adaptive-prop(padding-top, 115, 0);
+  .to(1024px,{
+       .adaptive-prop(height, 1200, 1620);
+  });
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: -200px;
+    bottom: 0;
+    width: 100%;
+    border-radius: 0 0 64px 64px;
+    z-index: -1;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        360deg,
+        rgba(0, 0, 0, 0.7511379551820728) 0%,
+        rgba(0, 0, 0, 0.8995973389355743) 100%
+      );
+    }
+
+    .wrap-img {
+      position: absolute;
+      left: 0;
+      top: 0;
+      bottom: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+.rmbt-about-us-hero-block {
+  &__row {
+    .row-flex();
+    flex-wrap: nowrap;
+    .adaptive-prop(column-gap, 90, 0);
+    .to(1024px,{
+      flex-direction: column;
+      align-items: center;
+      row-gap: 60px;
+      });
+  }
+  &__col {
+    .col();
+    height: 300px;
+  }
+
+  &__img {
+    .adaptive-prop(width, 617, 300);
+    .adaptive-prop(height,626, 400);
+
+    .to(1024px,{
+       .adaptive-prop(width, 917, 300);
+       .adaptive-prop(height,926, 326);
+    
+    });
+
+    .wrap-img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__text {
+    min-height: 611px;
+    .adaptive-prop(width, 770, 200);
+    .to(1024px,{
+       .adaptive-prop(width, 900, 300);
+    });
+
+    .font-p {
+      text-align: left;
+      .adaptive-prop(font-size, 20, 16);
+      font-weight: 300;
+    }
+  }
+
+  .section-title {
+    margin: 0px 0px 24px 0px;
+  }
+
+  &__subtitle {
+    font-family: 'Montserrat';
+    color: #fff;
+    line-height: 140%;
+    text-transform: uppercase;
+    vertical-align: middle;
+    margin: 0px 0px 24px 0px;
+
+    span {
+      font-family: 'TrajanPro3SemiBold';
+      display: block;
+      .adaptive-prop(font-size, 24, 18);
+      text-transform: capitalize;
+      margin-bottom: 5px;
+    }
+  }
+}

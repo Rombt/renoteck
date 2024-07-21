@@ -154,6 +154,10 @@ require_once dirname(__FILE__) . '/sections/testimonials-block.php';
 require_once dirname(__FILE__) . '/sections/we_do_block.php';
 require_once dirname(__FILE__) . '/sections/service-areas-block.php';
 require_once dirname(__FILE__) . '/sections/finansing-about-block.php';
+require_once dirname(__FILE__) . '/sections/about_us_hero_block.php';
+require_once dirname(__FILE__) . '/sections/our-approach-block.php';
+require_once dirname(__FILE__) . '/sections/how-did-we-get-here-block.php';
+require_once dirname(__FILE__) . '/sections/our_team_block.php';
 
 
 

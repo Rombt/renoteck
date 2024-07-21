@@ -1,0 +1,137 @@
+.rmbt-how-did-we-get-here-block-wrapper-section {
+}
+.rmbt-how-did-we-get-here-block-full-width {
+  position: relative;
+
+  padding-bottom: 200px;
+
+  .rmbt-we-do-block-full-width__bg {
+    top: -250px;
+    clip-path: polygon(0 0, 100% 5.5%, 100% 95%, 0% 100%);
+  }
+}
+
+.rmbt-how-did-we-get-here-block-article-wrap {
+  position: relative;
+  margin-top: 150px;
+
+  &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    bottom: 0;
+    transform: translate(-50%, 0%);
+    width: 1.5px;
+    background-color: #fff;
+
+    .to(1440px,{
+    display: none;
+    });
+  }
+}
+
+.rmbt-how-did-we-get-here-block {
+  position: relative;
+
+  h2 {
+    .adaptive-prop(font-size, 60, 24);
+    text-align: center;
+  }
+  &__row {
+    .row-flex();
+    column-gap: 168px;
+    row-gap: 20px;
+    margin-bottom: 100px;
+    align-items: center;
+    justify-content: center;
+
+    .to(1440px,{
+      margin-bottom:60px;
+    });
+  }
+
+  &__years {
+    width: 171px;
+    height: 76px;
+    border-radius: 100px;
+    background-color: #003d73;
+    text-align: center;
+    color: #fff;
+    line-height: 76px;
+    font-family: TrajanPro3SemiBold;
+    font-size: 20px;
+  }
+
+  &__article-text {
+    text-align: left;
+  }
+
+  &__article-body {
+    .adaptive-prop(width, 676,319 );
+    .adaptive-prop(height, 478,219);
+
+    .to(1440px,{
+         order: 2;
+         width:676px;
+         height:478px;
+      });
+
+    .to(780px,{
+    .adaptive-prop(width, 676,319 );
+    .adaptive-prop(height, 478,350);
+      });
+
+    h2 {
+      .adaptive-prop(font-size, 40, 20);
+      text-align: left;
+    }
+  }
+  &__img {
+    .adaptive-prop(width, 676,319 );
+    .adaptive-prop(height, 478,219);
+
+    .to(1440px,{
+         order: 1;
+         width:676px;
+         height:478px;
+      });
+
+    .to(780px,{
+    .adaptive-prop(width, 676,319 );
+    .adaptive-prop(height, 478,219);
+      });
+  }
+
+  .our-start {
+    width: 171px !important;
+    height: 76px !important;
+    border-radius: 100px;
+    text-align: center;
+    color: #fff;
+    line-height: 76px;
+    font-family: TrajanPro3SemiBold;
+    font-size: 20px;
+    margin: 0px auto 0px auto;
+    position: relative;
+
+    .to(1440px,{
+      display: none;
+    });
+
+    &:first-child {
+      margin-bottom: 100px;
+      transform: translate(0%;-100%);
+    }
+    &:last-child {
+      transform: translate(0%;100%);
+    }
+  }
+
+  .flex-order-body {
+    order: 2;
+  }
+  .flex-order-img {
+    order: 1;
+  }
+}

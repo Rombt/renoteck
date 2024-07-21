@@ -1,0 +1,63 @@
+.rmbt-our-team-block-wrapper-section {
+  //   border: 10px solid #0515fd;
+}
+.rmbt-our-team-block-full-width {
+  position: relative;
+  .adaptive-prop(height, 1580, 1580);
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: -250px;
+    bottom: -3px;
+    width: 100%;
+    z-index: -1;
+  }
+}
+.rmbt-our-team-block {
+  &__row {
+    .row-flex();
+    justify-content: center;
+    row-gap: 56px;
+
+    .rmbt-testimonials-slider-wrap {
+      display: none;
+
+      .to(480px,{
+          display: block;
+       });
+    }
+  }
+
+  &__text {
+    max-width: 90%;
+
+    h2 {
+      .adaptive-prop(font-size, 60, 24);
+      text-align: center;
+    }
+  }
+
+  &__cards-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+
+    .to(1024px,{
+      justify-content: center;
+      column-gap: 30px
+    });
+
+    .rmbt-testimonials-block-card {
+      box-sizing: border-box;
+
+      .adaptive-prop(width, 350, 145);
+      .adaptive-prop(height, 400, 200);
+    }
+
+    .to(480px,{
+          display: none;
+       });
+  }
+}
