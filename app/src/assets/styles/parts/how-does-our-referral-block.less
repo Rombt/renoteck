@@ -1,0 +1,60 @@
+.rmbt-how-does-our-referral-block-wrapper-section {
+}
+.rmbt-how-does-our-referral-block-full-width {
+  position: relative;
+  min-height: 1130px;
+  padding-bottom: 118px;
+  // .adaptive-prop(height, 1130, 1130);
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: -250px;
+    bottom: -3px;
+    width: 100%;
+    z-index: -1;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        360deg,
+        rgba(0, 0, 0, 0.7511379551820728) 0%,
+        rgba(0, 0, 0, 0.8995973389355743) 100%
+      );
+    }
+  }
+}
+.rmbt-how-does-our-referral-block {
+  &__row {
+    .row-flex();
+    justify-content: center;
+    row-gap: 56px;
+
+    .rmbt-testimonials-slider-wrap {
+      display: none;
+
+      .to(480px,{
+          display: block;
+       });
+    }
+  }
+
+  &__text {
+    max-width: 90%;
+
+    h2 {
+      .adaptive-prop(font-size, 60, 24);
+      text-align: center;
+    }
+  }
+
+  .rmbt-financing-block-wrap-cards {
+    .adaptive-prop(row-gap, 160, 200);
+  }
+}

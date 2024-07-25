@@ -29,7 +29,7 @@
                </div>
             </div>
             <div class="rmbt-hero-block__col blur-block rmbt-hero-block__capture-form">
-               <?php get_template_part('template-parts/components/capture-form');?>
+               <?php get_template_part('template-parts/components/capture_form');?>
             </div>
          </div>
       </div>

@@ -1,0 +1,76 @@
+.rmbt-amazing-reward-levels-block-card {
+  color: #fff;
+  font-family: 'TrajanPro3SemiBold';
+
+  .adaptive-prop(width, 350, 316);
+  .adaptive-prop(height, 280, 260);
+  padding: 24px;
+  box-sizing: border-box;
+  display: flex;
+  h4 {
+    font-size: 24px;
+    margin: 0px 0px 12px 0px;
+    width: 300px;
+  }
+
+  &__subtitle {
+    font-size: 18px;
+    text-align: left;
+  }
+
+  &__dollars {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 150px;
+  }
+
+  &__level {
+    display: flex;
+    flex-direction: column;
+    max-width: 150px;
+  }
+
+  .number-step {
+    width: 100px;
+    height: 100px;
+
+    .adaptive-prop(width, 100, 80);
+    .adaptive-prop(height, 100, 80);
+
+    border-radius: 50%;
+    background-color: #a41c35;
+    position: relative;
+    flex-shrink: 0;
+    margin: 8px 0px 8px 0px;
+
+    &__body {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      font-family: 'TrajanPro3SemiBold';
+      font-size: 51px;
+    }
+  }
+
+  &__text {
+    font-size: 21px;
+    max-width: 150px;
+  }
+  &__number {
+    .adaptive-prop(font-size, 51, 41);
+
+    svg {
+      width: 122px;
+      height: 60px;
+    }
+  }
+
+  &__footer {
+    font-size: 18px;
+    text-align: left;
+  }
+}

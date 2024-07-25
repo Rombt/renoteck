@@ -14,7 +14,7 @@
       <section class="rmbt-container rmbt-banner-capture-form-block">
          <div class="rmbt-banner-capture-form-block__row">
             <div class="rmbt-banner-capture-form-block__col blur-block rmbt-hero-block__capture-form">
-               <?php get_template_part('template-parts/components/capture-form');?>
+               <?php get_template_part('template-parts/components/capture_form');?>
             </div>
          </div>
       </section>

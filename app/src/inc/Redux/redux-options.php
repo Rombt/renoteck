@@ -158,6 +158,9 @@ require_once dirname(__FILE__) . '/sections/about_us_hero_block.php';
 require_once dirname(__FILE__) . '/sections/our-approach-block.php';
 require_once dirname(__FILE__) . '/sections/how-did-we-get-here-block.php';
 require_once dirname(__FILE__) . '/sections/our_team_block.php';
+require_once dirname(__FILE__) . '/sections/how-does-our-referral-block.php';
+require_once dirname(__FILE__) . '/sections/amazing-reward-levels-block.php';
+require_once dirname(__FILE__) . '/sections/capture_form-referral.php';
 
 
 

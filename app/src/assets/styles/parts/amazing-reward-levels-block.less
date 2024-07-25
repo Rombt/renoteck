@@ -1,0 +1,85 @@
+.rmbt-amazing-reward-levels-block-wrapper-section {
+}
+.rmbt-amazing-reward-levels-block-full-width {
+  position: relative;
+  .adaptive-prop(padding-top, 160, 49);
+  .adaptive-prop(padding-bottom, 80, 80);
+
+  min-height: 1650px;
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    z-index: -1;
+
+    // &::after {
+    //   content: '';
+    //   position: absolute;
+    //   left: 0;
+    //   top: 0;
+    //   width: 100%;
+    //   height: 100%;
+    //   background: rgb(0, 0, 0);
+    //   background: linear-gradient(
+    //     360deg,
+    //     rgba(0, 0, 0, 0.7511379551820728) 0%,
+    //     rgba(0, 0, 0, 0.8995973389355743) 100%
+    //   );
+    // }
+  }
+}
+.rmbt-amazing-reward-levels-block {
+  &__row {
+    .row-flex();
+    justify-content: center;
+    row-gap: 56px;
+
+    .rmbt-testimonials-slider-wrap {
+      display: none;
+
+      .to(480px,{
+          display: block;
+       });
+    }
+  }
+
+  h2 {
+    .adaptive-prop(font-size, 60, 24);
+    text-align: center;
+    max-width: 90%;
+  }
+
+  &__text {
+    max-width: 90%;
+
+    .section-title {
+      .adaptive-prop(font-size,40, 20);
+    }
+  }
+
+  &__cards-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 40px;
+
+    .to(1024px,{
+      justify-content: center;
+      column-gap: 30px
+    });
+
+    .rmbt-testimonials-block-card {
+      box-sizing: border-box;
+
+      .adaptive-prop(width, 350, 145);
+      .adaptive-prop(height, 400, 200);
+    }
+
+    .to(480px,{
+          display: none;
+       });
+  }
+}
