@@ -23,7 +23,9 @@
             <section class="rmbt-container rmbt-top-string">
                <div class="rmbt-top-string__row">
                   <div class="rmbt-top-string__col">
-                     <h3><?php echo rmbt_get_redux_field('rmbt-top_string_title') ?></h3>
+                     <a href="#">
+                        <h3><?php echo rmbt_get_redux_field('rmbt-top_string_title') ?></h3>
+                     </a>
                   </div>
                </div>
             </section>
@@ -44,7 +46,7 @@
                      <div class="main-header-icons-row__wrap-blocks" data-da="#menu-rmbt_header-navigation, 767, last">
                         <a href="tel:<?php echo rmbt_get_redux_field('rmbt-call-today_number') ?>"
                            class="main-header-icons-row__block rmbt-call-today">
-                           <svg>
+                           <svg class='svg-header-icons'>
                               <use
                                  xlink:href="<?php echo get_template_directory_uri() ?>/assets/img/icons/sprite.svg#phone_1">
                               </use>
@@ -55,10 +57,9 @@
                               </p>
                            </div>
                         </a>
-
                         <a href="https://www.instagram.com/<?php echo rmbt_get_redux_field('rmbt-instagram_nick') ?>"
                            class="main-header-icons-row__block rmbt-instagram">
-                           <svg>
+                           <svg class='svg-header-icons'>
                               <use
                                  xlink:href="<?php echo get_template_directory_uri() ?>/assets/img/icons/sprite.svg#instagram_1">
                               </use>
@@ -68,10 +69,9 @@
                               <p><?php echo rmbt_get_redux_field('rmbt-instagram_nick') ?></p>
                            </div>
                         </a>
-
                         <a href="https://www.facebook.com/<?php echo rmbt_get_redux_field('rmbt-facebook_nick') ?>"
                            class="main-header-icons-row__block rmbt-facebook">
-                           <svg>
+                           <svg class='svg-header-icons'>
                               <use
                                  xlink:href="<?php echo get_template_directory_uri() ?>/assets/img/icons/sprite.svg#facebook_1">
                               </use>

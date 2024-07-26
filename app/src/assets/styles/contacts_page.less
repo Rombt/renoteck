@@ -1,0 +1,145 @@
+.rmbt-contacts-page {
+  .rmbt-hero-block {
+    &__bg {
+    }
+    &__overlay {
+    }
+    &__row {
+      // border: 5px solid #0515fd;
+      height: auto;
+
+      .to(1440px,{
+        // flex-direction: column;
+        // align-items: center;
+        justify-content: center;
+        // height: 1985px;
+        // height: auto;
+      });
+    }
+    &__col {
+    }
+
+    .rmbt-cantact-page-col-left,
+    .rmbt-cantact-page-col-right {
+      .col();
+
+      // .to(1440px,{
+      //   display: flex;
+      //   flex-direction: column;
+      //   align-items: center;
+      //   // height: auto;
+      // });
+
+      // border: 5px solid #05fd1a;
+    }
+
+    .rmbt-cantact-page-col-left {
+      // .size(7);
+      max-width: 870px;
+
+      .rmbt-hero-block-text {
+        margin-bottom: 120px;
+
+        .to(1440px,{
+          margin-bottom: 0px; 
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: space-around;
+          width: 100%;
+          h1{
+            width: 100%;
+            flex-grow: 1;
+          }
+      });
+
+        .to(780px,{
+          flex-direction: column;
+          align-items: center;
+
+          a{
+
+            min-width: 250px;
+          }
+ 
+      });
+      }
+
+      .to(1440px,{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      row-gap: 60px;
+      });
+    }
+
+    .rmbt-cantact-page-col-right {
+      // .size(5);
+      max-width: 610px;
+
+      padding-left: 60px;
+
+      .rmbt-cantact-page-block-text {
+        font-family: 'TrajanPro3SemiBold';
+
+        .adaptive-prop(font-size, 28, 28);
+
+        font-weight: 500;
+        color: #fff;
+        text-transform: uppercase;
+        line-height: 150%;
+        margin: 0px 0px 0px 0px;
+        margin-bottom: 0px;
+      }
+    }
+
+    &__capture-form {
+    }
+  }
+
+  .rmbt-hero-block-text {
+    h1 {
+      margin-bottom: 60px !important;
+    }
+    a {
+      font-family: 'Roboto';
+      .adaptive-prop(font-size, 22, 18);
+      font-weight: 700;
+      font-style: normal;
+      text-transform: capitalize;
+      color: #fff;
+
+      display: flex;
+      flex-wrap: wrap;
+      column-gap: 15px;
+
+      margin-bottom: 28px;
+
+      p {
+        margin: 0px 0px 0px 0px;
+      }
+
+      p {
+        &:first-of-type {
+          flex-basis: 75%;
+          flex-grow: 1;
+        }
+      }
+
+      p {
+        &:last-of-type {
+          font-weight: 300;
+          margin-top: 10px;
+        }
+      }
+    }
+  }
+  .rmbt-hero-block-map {
+    width: 100%;
+    iframe {
+      width: 100%;
+      border-radius: 30px;
+    }
+  }
+}
+.rmbt-hero-block-wrapper-section {
+}

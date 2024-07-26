@@ -1,15 +1,10 @@
 .rmbt-hero-block {
   position: relative;
   padding: 0px 0px 0px 0px;
-  height: 1160px;
+  min-height: 1160px;
 
-  .to(1280px,{
-    height: 1480px;
-  });
-
-  .to(480px,{
-    height: 1610px;
-  });
+  height: auto;
+  padding-bottom: 120px;
 
   &__bg {
     position: absolute;
@@ -40,7 +35,7 @@
   &__row {
     .row-flex();
     position: relative;
-    height: 720px;
+    // height: 720px;
     justify-content: space-between;
     .adaptive-prop(margin-top, 30, 20);
 
@@ -149,16 +144,17 @@
 
     box-sizing: border-box;
     min-height: 720px;
-    max-height: 720px;
+    // max-height: 720px;
     min-width: 510px;
     padding: 40px 30px 30px 40px;
     position: relative;
     z-index: 2;
     border-radius: 30px;
 
-    .to(480px,{
-      min-width: 380px;
-    max-width: 380px;
+    .to(560px,{
+      min-width: auto;
+      .adaptive-prop(width, 2000, 300);
+      
     });
   }
 }

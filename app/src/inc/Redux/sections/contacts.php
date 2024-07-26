@@ -17,7 +17,71 @@ Redux::set_section(
 				'id' => 'rmbt-address',
 				'type' => 'textarea',
 				'title' => esc_html__('Enter Your Address', 'rmbt_renoteck'),
+				 'default'  => esc_html__('','rmbt_renoteck'),
 			),
+
+
+			//contacts page section start -----------------------------------
+			array(
+				'id' => 'rmbt-contacts-page-section-start',
+				'type' => 'section',
+				'title' => esc_html__('Contacts Page settings', 'rmbt_renoteck'),
+				'indent' => true
+			),
+
+			array(
+				'id' => 'rmbt-contacts-page-title',
+				'type' => 'text',
+				'title' => esc_html__('Contacts Page Title', 'rmbt_renoteck'),
+				 'default'  => esc_html__('Let`s Chat','rmbt_renoteck'),
+			),
+
+			array(
+				'id' => 'rmbt-contacts-page-map-iframe',
+				'type' => 'textarea',
+				'title' => esc_html__('Contacts Page Link to Map', 'rmbt_renoteck'),
+				 'default'  => '<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d18078360.375675336!2d-106.2465356!3d56.4189742!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x537170039f843fd5%3A0x266d3bb1b652b63a!2z0JrQsNC70LPQsNGA0LgsINCQ0LvRjNCx0LXRgNGC0LAsINCa0LDQvdCw0LTQsA!5e0!3m2!1sru!2sua!4v1721896138138!5m2!1sru!2sua" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>',
+			),
+
+			array(
+				'id' => 'rmbt-contacts-page-title-2',
+				'type' => 'text',
+				'title' => esc_html__('Contacts Page Second Title', 'rmbt_renoteck'),
+				 'default'  => esc_html__('Get in Touch','rmbt_renoteck'),
+			),
+			array(
+				'id' => 'rmbt-contacts-page-subtitle-2',
+				'type' => 'text',
+				'title' => esc_html__('Contacts Page Second Subtitle', 'rmbt_renoteck'),
+				 'default'  => esc_html__('We guarantee to get back to you within 24 hours','rmbt_renoteck'),
+			),
+
+
+			array(
+				'id' => 'rmbt-contacts-form-title',
+				'type' => 'text',
+				'title' => esc_html__('Contacts Form Title', 'rmbt_renoteck'),
+				'default'  => esc_html__('Get in Touch','rmbt_renoteck'),
+			),
+
+			array(
+				'id' => 'rmbt-contacts-form-subtitle',
+				'type' => 'text',
+				'title' => esc_html__('Contacts Form Subtitle', 'rmbt_renoteck'),
+				'default'  => esc_html__('Fill out the form below and our team will get back to you in less than 24 hours.','rmbt_renoteck'),
+			),
+			
+
+			array(
+				'id'     => 'rmbt-manager-1-section-end',
+				'type'   => 'section',
+				'indent' => false,
+			),
+			//contacts page section end	-----------------------------------
+
+
+
+
 
 			//First Manager section start -----------------------------------
 			array(

@@ -128,6 +128,82 @@ Redux::set_section(
 				'indent' => false,
 			),
 
+			array(
+				'id' => 'rmbt-social-networks_twitter-section-start',
+				'type' => 'section',
+				'title' => esc_html__('Twitter section', 'rmbt_renoteck'),
+				// 'subtitle' => esc_html__('Enter phone number and set his name', 'rmbt_renoteck'),
+				'indent' => true
+			),
+
+			array(
+				'id' => 'rmbt-social-networks_twitter-link',
+				'type' => 'text',
+				'title' => esc_html__('Twitter link', 'rmbt_renoteck'),
+				'default' => esc_url('https://twitter.com/'),
+			),
+			array(
+				'id' => 'rmbt-social-networks-twitter_img-id',
+				'type' => 'media',
+				'url' => true,
+				'title' => esc_html__('Twitter icon', 'rmbt_renoteck'),
+				'compiler' => 'true',
+				'preview_size' => 'full',
+				// 'default' => array(
+				// 	'url' => '/assets/img/icon_twitter.png'
+				// ),
+			),
+			array(
+				'id' => 'rmbt-social-networks-twitter_img-alt',
+				'type' => 'text',
+				'title' => esc_html__('Image description for twitter icon', 'rmbt_renoteck'),
+				'default' => esc_html__('', 'rmbt_renoteck'),
+			),
+
+			array(
+				'id'     => 'rmbt-social-networks_twitter-section-end',
+				'type'   => 'section',
+				'indent' => false,
+			),
+
+			array(
+				'id' => 'rmbt-social-networks_linkedin-section-start',
+				'type' => 'section',
+				'title' => esc_html__('Linkedin section', 'rmbt_renoteck'),
+				// 'subtitle' => esc_html__('Enter phone number and set his name', 'rmbt_renoteck'),
+				'indent' => true
+			),
+
+			array(
+				'id' => 'rmbt-social-networks_linkedin-link',
+				'type' => 'text',
+				'title' => esc_html__('Linkedin link', 'rmbt_renoteck'),
+				'default' => esc_url('https://linkedin.com/'),
+			),
+			array(
+				'id' => 'rmbt-social-networks-linkedin_img-id',
+				'type' => 'media',
+				'url' => true,
+				'title' => esc_html__('Linkedin icon', 'rmbt_renoteck'),
+				'compiler' => 'true',
+				'preview_size' => 'full',
+				// 'default' => array(
+				// 	'url' => '/assets/img/icon_linkedin.png'
+				// ),
+			),
+			array(
+				'id' => 'rmbt-social-networks-linkedin_img-alt',
+				'type' => 'text',
+				'title' => esc_html__('Image description for linkedin icon', 'rmbt_renoteck'),
+				'default' => esc_html__('', 'rmbt_renoteck'),
+			),
+
+			array(
+				'id'     => 'rmbt-social-networks_linkedin-section-end',
+				'type'   => 'section',
+				'indent' => false,
+			),
+
 		),
 	)
 

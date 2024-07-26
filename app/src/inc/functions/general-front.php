@@ -371,27 +371,29 @@ function rmbt_redux_get_pic_url($id_field_pic, $custom_default_url = '')
 	}
 }
 
-function rmbt_redux_img($id_field_pic, $alt = "", $id_svg = '')
+function rmbt_redux_img($id_field_pic, $alt = "", $id_svg = '', $class='')
 {
 	if (rmbt_redux_get_pic_url($id_field_pic)) {
-		return '<img src="' . rmbt_redux_get_pic_url($id_field_pic) . '" alt="' . $alt . '">';
+		return '<img src="' . rmbt_redux_get_pic_url($id_field_pic) . '" alt="' . $alt . '" class="' . $class . '">';
 	} else {
 		if ($id_svg == '') {
 			return;
 		}
 
-		return '<svg>
-			<use xlink:href="' . get_template_directory_uri() . '/assets/img/icons/sprite.svg#' . $id_svg . '"></use>
+		return '<svg  class="' . $class . '" > 
+			<use xlink:href="' . get_template_directory_uri() . '/assets/img/icons/sprite.svg#' . $id_svg .'"></use>
 		</svg>';
 	}
 }
 
-function rmbt_get_redux_field($id_field, $kses = false)
+function rmbt_get_redux_field($id_field, $kses = false, $all_tags_allowed=false)
 {
 	global $rmbt_renoteck_options;
 
 	if ($kses) {
 		return class_exists('ReduxFramework') ? wp_kses($rmbt_renoteck_options[$id_field], 'post') : "";
+	}elseif ($all_tags_allowed) {
+		return class_exists('ReduxFramework') ? $rmbt_renoteck_options[$id_field] : "";
 	}
 	return class_exists('ReduxFramework') ? esc_html__($rmbt_renoteck_options[$id_field]) : "";
 }

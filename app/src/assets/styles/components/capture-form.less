@@ -84,15 +84,15 @@
     label {
       margin-top: 10px;
     }
-  }
 
-  &__button {
-    .adaptive-prop(width, 510, 360);
-    margin: 0 auto;
+    button {
+      .adaptive-prop(width, 510, 360);
+      margin: 0 auto;
 
-    .to(480px,{
-    width: 311px;
-    });
+      .to(480px,{
+        width: 80%;
+      });
+    }
   }
 }
 
@@ -117,10 +117,7 @@
     font-weight: 400;
     color: #fff;
     text-align: center;
-
-    .to(480px,{
-    display: block;
-    });
+    width: 100%;
   }
 
   h5 {
@@ -326,6 +323,17 @@
       flex-grow: 1;
       flex-shrink: 0;
 
+      margin: 0 auto;
+
+      // &__button {
+      // .adaptive-prop(width, 510, 360);
+      // margin: 0 auto;
+
+      // .to(480px,{
+      // width: 311px;
+      // });
+      // }
+
       .to(480px,{
         width: 210px ;
         flex-basis: 0px;
@@ -334,5 +342,32 @@
         
       });
     }
+  }
+}
+
+.rmbt-contacts-form {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 40px;
+  justify-content: space-between;
+
+  h3 {
+    margin: 0px 0px 30px 0px;
+  }
+
+  button {
+    width: 90%;
+  }
+  .font-p {
+    .adaptive-prop(font-size, 22, 16);
+    letter-spacing: 0px;
+  }
+
+  .short-field {
+    flex-basis: 40%;
+    flex-grow: 1;
+  }
+  .long-field {
+    flex-basis: 100%;
   }
 }

@@ -14,7 +14,14 @@
                   roof to provide a solution for all your roofing needs. From new residential roofs, re-roofs, and
                   repairs to shingles and metal to industry-leading commercial roof systems and coatings
                </div>
-               <?php get_template_part('template-parts/components/social_networks'); ?>
+               <?php // get_template_part('template-parts/components/social_networks'); ?>
+               <?php get_template_part('template-parts/components/social_networks', null, [
+                        'facebook_id' => 'facebook_2',
+                        'instagram_id' => 'instagram_2',
+                        'youtube_id' => 'youtube_1',
+                        'twitter_id' => 'twitter_1',
+                        'class' => 'svg-footer-icons '
+                        ]); ?>
 
             </div>
 
