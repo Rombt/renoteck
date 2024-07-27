@@ -16,7 +16,7 @@ Redux::set_section(
 
 
          array(
-				'id' => 'about-us-gallery-block-gallery',
+				'id' => 'about-us-gallery-block',
 				'type' => 'gallery',
 				'title' => esc_html__('Add/Edit About Us Gallery', 'rmbt_renoteck'),
 			),

@@ -1,6 +1,6 @@
 <?php global $rmbt_renoteck_options;
-      if (isset($rmbt_renoteck_options['about-us_gallery'])) {
-         $arr_about_us = explode(",", $rmbt_renoteck_options['about-us_gallery']);
+      if (isset($rmbt_renoteck_options['about-us-gallery-block'])) {
+         $arr_about_us = explode(",", $rmbt_renoteck_options['about-us-gallery-block']);
       } ?>
 
 <div class="blur-block rmbt-about-us-gallery" data-da=".rmbt-about-us__text, 1280,1">

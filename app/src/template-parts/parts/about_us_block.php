@@ -7,7 +7,7 @@
 
 
 
-      <?php get_template_part('template-parts/components/rmbt-about-us-gallery', null, [
+      <?php get_template_part('template-parts/components/about-us-gallery', null, [
       'title' => '',
       'text' => '',
       'tag-img' => '',
