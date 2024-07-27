@@ -162,6 +162,7 @@ require_once dirname(__FILE__) . '/sections/how-does-our-referral-block.php';
 require_once dirname(__FILE__) . '/sections/amazing-reward-levels-block.php';
 require_once dirname(__FILE__) . '/sections/capture_form-referral.php';
 require_once dirname(__FILE__) . '/sections/commercial_roofing_page.php';
+require_once dirname(__FILE__) . '/sections/rmbt-about-us-gallery_block.php';
 
 
 

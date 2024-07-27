@@ -33,29 +33,12 @@ function rmbt_get_images_sizes()
 	return array(
 		'post' => array(
 			array(
-				'name' => 'rmbt_post-img',
-				'width' => 845,
-				'height' => 400,
+				'name' => 'rmbt_about-us-gallery',
+				'width' => 330,
+				'height' => 234,
 				'crop' => true,
 			),
-			array(
-				'name' => 'rmbt_small-img',
-				'width' => 70,
-				'height' => 70,
-				'crop' => true,
-			),
-			array(
-				'name' => 'rmbt_largest-img',
-				'width' => 1970,
-				'height' => 570,
-				'crop' => true,
-			),
-			array(
-				'name' => 'rmbt_header-img',
-				'width' => 1970,
-				'height' => 250,
-				'crop' => true,
-			),
+
 		)
 	);
 }
