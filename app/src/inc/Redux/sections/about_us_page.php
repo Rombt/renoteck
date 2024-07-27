@@ -44,113 +44,26 @@ Redux::set_section(
 				'type' => 'text',
 				'title' => esc_html__('Description for background picture', 'rmbt_renoteck'),
 			),
+
+
+			
          array(
-				'id' => 'rmbt-about-us-gallery_image-1',
-				'type' => 'media',
-				'url' => true,
-				'title' => esc_html__('About Us Gallery First Image', 'rmbt_renoteck'),
-				'compiler' => 'true',
-				'preview_size' => 'full',
-				'default' => array(
-					'url' => '/assets/img/about_us-block/photo_2023-11-23_06-31-31.jpg'
-				),
+				'id' => 'about-us-gallery-block',
+				'type' => 'gallery',
+				'title' => esc_html__('Add/Edit About Us Gallery', 'rmbt_renoteck'),
 			),
-         array(
-				'id' => 'rmbt-about-us-gallery_imag-1_alt',
+			array(
+				'id' => 'rmbt-rmbt-about-us-gallery-block-arrow-left-id',
 				'type' => 'text',
-				'title' => esc_html__('Description for first picture', 'rmbt_renoteck'),
+				'title' => esc_html__('Arrow left for pagination id', 'rmbt_renoteck'),
+				 'default'  => esc_html__('arrow_left','rmbt_renoteck'),
 			),
-
-
-         array(
-				'id' => 'rmbt-about-us-gallery_image-2',
-				'type' => 'media',
-				'url' => true,
-				'title' => esc_html__('About Us Gallery Second Image', 'rmbt_renoteck'),
-				'compiler' => 'true',
-				'preview_size' => 'full',
-				'default' => array(
-					'url' => '/assets/img/about_us-block/photo_2023-11-23_06-31-55.jpg'
-				),
-			),
-         array(
-				'id' => 'rmbt-about-us-gallery_imag-2_alt',
+			array(
+				'id' => 'rmbt-rmbt-about-us-gallery-block-arrow-right-id',
 				'type' => 'text',
-				'title' => esc_html__('Description for second picture', 'rmbt_renoteck'),
+				'title' => esc_html__('Arrow left for pagination id', 'rmbt_renoteck'),
+				 'default'  => esc_html__('arrow_right','rmbt_renoteck'),
 			),
-
-
-         array(
-				'id' => 'rmbt-about-us-gallery_image-3',
-				'type' => 'media',
-				'url' => true,
-				'title' => esc_html__('About Us Gallery Third Image', 'rmbt_renoteck'),
-				'compiler' => 'true',
-				'preview_size' => 'full',
-				'default' => array(
-					'url' => '/assets/img/about_us-block/Frame 1000003714.jpg'
-				),
-			),
-         array(
-				'id' => 'rmbt-about-us-gallery_imag-3_alt',
-				'type' => 'text',
-				'title' => esc_html__('Description for third picture', 'rmbt_renoteck'),
-			),
-
-
-         array(
-				'id' => 'rmbt-about-us-gallery_image-4',
-				'type' => 'media',
-				'url' => true,
-				'title' => esc_html__('About Us Gallery Forth Image', 'rmbt_renoteck'),
-				'compiler' => 'true',
-				'preview_size' => 'full',
-				'default' => array(
-					'url' => '/assets/img/about_us-block/photo_2023-11-23_06-31-01.jpg'
-				),
-			),
-         array(
-				'id' => 'rmbt-about-us-gallery_imag-4_alt',
-				'type' => 'text',
-				'title' => esc_html__('Description for forth picture', 'rmbt_renoteck'),
-			),
-
-
-         array(
-				'id' => 'rmbt-about-us-gallery_image-5',
-				'type' => 'media',
-				'url' => true,
-				'title' => esc_html__('About Us Gallery Fifth Image', 'rmbt_renoteck'),
-				'compiler' => 'true',
-				'preview_size' => 'full',
-				'default' => array(
-					'url' => '/assets/img/about_us-block/photo_2023-11-23_06-31-03.jpg'
-				),
-			),
-         array(
-				'id' => 'rmbt-about-us-gallery_imag-5_alt',
-				'type' => 'text',
-				'title' => esc_html__('Description for fifth picture', 'rmbt_renoteck'),
-			),
-
-
-         array(
-				'id' => 'rmbt-about-us-gallery_image-6',
-				'type' => 'media',
-				'url' => true,
-				'title' => esc_html__('About Us Gallery Sixth Image', 'rmbt_renoteck'),
-				'compiler' => 'true',
-				'preview_size' => 'full',
-				'default' => array(
-					'url' => '/assets/img/about_us-block/Frame 1000003714.jpg'
-				),
-			),
-         array(
-				'id' => 'rmbt-about-us-gallery_imag-6_alt',
-				'type' => 'text',
-				'title' => esc_html__('Description for sixth picture', 'rmbt_renoteck'),
-			),
-
           
       ),
    )

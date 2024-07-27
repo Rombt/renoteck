@@ -7,10 +7,12 @@
 
 
 
-      <?php get_template_part('template-parts/components/about-us-gallery', null, [
-      'title' => '',
-      'text' => '',
-      'tag-img' => '',
+      <?php get_template_part('template-parts/components/about_us_gallery', null, [
+      'gallery_id' => 'about-us-gallery-block',
+      'gallery_class' => 'rmbt-about-us-gallery',
+      'swiper_class' => 'rmbt-about-us-swiper',
+      'additional_parameters' => 'data-da=".rmbt-about-us__text, 1280,1"',
+      
       'link_read_more_href' => '',
       ]);
        ?>

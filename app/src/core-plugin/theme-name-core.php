@@ -31,15 +31,15 @@ function rmbt_get_images_sizes()
 {
 
 	return array(
-		'post' => array(
-			array(
-				'name' => 'rmbt_about-us-gallery',
-				'width' => 330,
-				'height' => 234,
-				'crop' => true,
-			),
+		// 'post' => array(
+		// 	array(
+		// 		'name' => 'rmbt_about-us-gallery',
+		// 		'width' => 330,
+		// 		'height' => 234,
+		// 		'crop' => true,
+		// 	),
 
-		)
+		// )
 	);
 }
 add_action('plugin_loaded', 'rmbt_register_image_size');

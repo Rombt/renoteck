@@ -56,3 +56,21 @@ if (document.querySelector('.rmbt-testimonials-video-swiper')) {
     // },
   });
 }
+
+if (document.querySelector('.rmbt-about-us-swiper')) {
+  swiperParam = new Swiper('.rmbt-about-us-swiper', {
+    slidesPerView: 3,
+    grid: {
+      rows: 2,
+    },
+    spaceBetween: 30,
+    direction: 'horizontal',
+    loop: true,
+    centeredSlides: true,
+    centerInsufficientSlides: true,
+    speed: 400,
+    autoplay: {
+      delay: 5000,
+    },
+  });
+}
