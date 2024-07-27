@@ -37,21 +37,23 @@
 
             <div class="rmbt-commercial-roofing-block__col rmbt-commercial-roofing-block__icons-block icons-block">
                <div class="icons-block__years icon-block">
-                  <div class="icon-block__title">25+</div>
+                  <div class="icon-block__title">1</div>
                   <div class="blur-block icon-block__text">
-                     Years Of Experience
+                     Conducting a thorough roof inspection
                   </div>
                </div>
                <div class="icons-block__projects icon-block">
-                  <div class="icon-block__title">15+</div>
+                  <div class="icon-block__title">2</div>
                   <div class="blur-block icon-block__text">
-                     Projects Completed
+                     Analyzing the results from our inspection to give you a variety of roofing solutions designed to
+                     meet your budget
                   </div>
                </div>
                <div class="icons-block__suport icon-block">
-                  <div class="icon-block__title">24<span>/7</span></div>
+                  <div class="icon-block__title">3</div>
                   <div class="blur-block icon-block__text">
-                     Customer Support
+                     Providing consistent customer care through out the duration of the installation process and onwards
+                     by backing our work
                   </div>
                </div>
 
