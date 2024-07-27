@@ -5,35 +5,21 @@
          <img src="<?php echo get_template_directory_uri() ?>/assets/img/about_us-block/about-us-block__grd.png" alt="">
       </div>
 
-      <div class="blur-block rmbt-about-us-gallery" data-da=".rmbt-about-us__text, 1280,1">
-         <diw class="rmbt-about-us-gallery__img wrap-img">
-            <?php echo rmbt_redux_img('rmbt-about-us-gallery_image-1', rmbt_get_redux_field('rmbt-about-us-gallery_imag-1_alt')) ?>
-         </diw>
-         <diw class="rmbt-about-us-gallery__img wrap-img">
-            <?php echo rmbt_redux_img('rmbt-about-us-gallery_image-2', rmbt_get_redux_field('rmbt-about-us-gallery_imag-2_alt')) ?>
-         </diw>
-         <diw class="rmbt-about-us-gallery__img wrap-img">
-            <?php echo rmbt_redux_img('rmbt-about-us-gallery_image-3', rmbt_get_redux_field('rmbt-about-us-gallery_imag-3_alt')) ?>
-         </diw>
-         <diw class="rmbt-about-us-gallery__img wrap-img">
-            <?php echo rmbt_redux_img('rmbt-about-us-gallery_image-4', rmbt_get_redux_field('rmbt-about-us-gallery_imag-4_alt')) ?>
-         </diw>
-         <diw class="rmbt-about-us-gallery__img wrap-img">
-            <?php echo rmbt_redux_img('rmbt-about-us-gallery_image-5', rmbt_get_redux_field('rmbt-about-us-gallery_imag-5_alt')) ?>
-         </diw>
-         <diw class="rmbt-about-us-gallery__img wrap-img">
-            <?php echo rmbt_redux_img('rmbt-about-us-gallery_image-6', rmbt_get_redux_field('rmbt-about-us-gallery_imag-6_alt')) ?>
-         </diw>
-         <svg>
-            <use xlink:href="<?php echo get_template_directory_uri() ?>/assets/img/icons/sprite.svg#arrow_1">
-            </use>
-         </svg>
 
-      </div>
+
+      <?php get_template_part('template-parts/components/rmbt-about-us-gallery', null, [
+      'title' => '',
+      'text' => '',
+      'tag-img' => '',
+      'link_read_more_href' => '',
+      ]);
+       ?>
 
 
       <section class="rmbt-container rmbt-about-us">
          <div class="rmbt-about-us__row">
+
+
             <div class="rmbt-about-us__col rmbt-about-us__text">
                <?php get_template_part('template-parts/components/title', 'section', ['title' => rmbt_get_redux_field('rmbt-about-us_section-title')]); ?>
                <p><?php echo rmbt_get_redux_field('rmbt-about-us_section-text') ?></p>
@@ -65,6 +51,9 @@
 
 
             </div>
+
+
+
          </div>
       </section>
    </div>
