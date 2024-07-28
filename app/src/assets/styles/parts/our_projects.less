@@ -112,90 +112,89 @@
     line-height: 60px;
     margin: 0 auto;
   }
+}
 
-  .tabs {
-    margin-bottom: 20px !important;
-    position: relative;
-    .adaptive-prop(height, 736,350);
-    .adaptive-prop(margin-bottom, 100, 30);
+.tabs {
+  margin-bottom: 20px !important;
+  position: relative;
+  .adaptive-prop(height, 736,350);
+  .adaptive-prop(margin-bottom, 100, 30);
 
-    .to(1024px,{
+  .to(1024px,{
     .adaptive-prop(height, 736,580);
   
   });
 
-    &__nav {
-      display: flex;
-      column-gap: 42px;
-      justify-content: center;
-      margin-bottom: 56px;
+  &__nav {
+    display: flex;
+    column-gap: 42px;
+    justify-content: center;
+    margin-bottom: 56px;
 
-      .to(1024px,{
+    .to(1024px,{
     flex-direction: column;
     align-items: center;
     row-gap: 20px;
     
     });
-    }
-    &__title {
-      all: unset;
-      font-family: 'TrajanPro3Bold';
-      .adaptive-prop(font-size, 20, 20);
-      color: #fff;
-      text-transform: uppercase;
-      text-align: center;
-      margin-top: 0;
-      cursor: pointer;
+  }
+  &__title {
+    all: unset;
+    font-family: 'TrajanPro3Bold';
+    .adaptive-prop(font-size, 20, 20);
+    color: #fff;
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+    cursor: pointer;
 
-      width: max-content;
-    }
-    &__content {
-      width: 100%;
-      height: 100%;
+    width: max-content;
+  }
+  &__content {
+    width: 100%;
+    height: 100%;
 
-      .to(1024px,{
+    .to(1024px,{
     });
 
-      [data-tab-name='residentail'] {
-      }
-
-      [data-tab-name='commercial'] {
-        background-color: rgba(250, 223, 174, 0.2);
-
-        width: 100%;
-        height: 496px;
-        margin: 0 auto;
-      }
-
-      [data-tab-name='industrial'] {
-        background-color: rgba(214, 250, 174, 0.2);
-
-        width: 100%;
-        height: 496px;
-        margin: 0 auto;
-      }
+    [data-tab-name='residentail'] {
     }
-    &__body {
+
+    [data-tab-name='commercial'] {
+      background-color: rgba(250, 223, 174, 0.2);
+
       width: 100%;
-      padding: 0px 0px 0px 0px;
-
-      .tabs-residentail-wrap {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        row-gap: 30px;
-      }
+      height: 496px;
+      margin: 0 auto;
     }
 
-    &__title-active {
-      border-bottom: 2px solid #a41c35;
-    }
-    &__body-active {
+    [data-tab-name='industrial'] {
+      background-color: rgba(214, 250, 174, 0.2);
+
+      width: 100%;
+      height: 496px;
+      margin: 0 auto;
     }
   }
-}
+  &__body {
+    width: 100%;
+    padding: 0px 0px 0px 0px;
 
+    .tabs-residentail-wrap {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      row-gap: 30px;
+    }
+  }
+
+  &__title-active {
+    border-bottom: 2px solid #a41c35;
+  }
+  &__body-active {
+  }
+}
 .rmbt-our-projects-tabs {
   width: 100%;
   overflow: hidden;
