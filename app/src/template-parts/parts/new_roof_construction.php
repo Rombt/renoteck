@@ -31,7 +31,6 @@
                         src="<?php echo get_template_directory_uri() ?>/assets/img/new-roof-construction-block/new-roof-construction-block_1.jpg"
                         alt="">
                   </div>
-                  <p>
                   <h3 class="section-title">Thermoplastic Polyolefin </h3>
                   <ul class="font-p">
                      <li>Popular choice in “green” buildings. </li>
@@ -49,7 +48,6 @@
                      <li>Point-AffixedPlates are installed at fixed intervals & the membrane is welded to the plates
                      </li>
                   </ul>
-                  </p>
 
                </div>
                <div class="blur-block tabs__body" data-tab-name="EPDM">

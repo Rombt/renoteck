@@ -114,6 +114,13 @@
   }
 
   .tabs {
+    .adaptive-prop(height, 736,350);
+
+    .to(1024px,{
+      .adaptive-prop(height, 736,580);
+    
+    });
+
     &__nav {
       .to(1024px,{
     flex-direction: column;
@@ -128,13 +135,8 @@
 .tabs {
   margin-bottom: 20px !important;
   position: relative;
-  .adaptive-prop(height, 736,350);
-  .adaptive-prop(margin-bottom, 100, 30);
 
-  .to(1024px,{
-    .adaptive-prop(height, 736,580);
-  
-  });
+  .adaptive-prop(margin-bottom, 100, 30);
 
   &__nav {
     display: flex;
