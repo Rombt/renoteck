@@ -3,7 +3,7 @@
 }
 .rmbt-new-roof-construction-block-full-width {
   position: relative;
-  min-height: 1850px;
+  .adaptive-prop(padding-bottom, 200, 20);
 
   &__bg {
     position: absolute;
@@ -32,6 +32,10 @@
   }
 }
 .rmbt-new-roof-construction-block {
+  .to(520px,{
+   
+   });
+
   &__title {
     width: 100%;
     text-align: center;
@@ -59,7 +63,6 @@
     &__body {
       min-height: 893px;
       padding: 40px 40px 40px 40px;
-      bottom: auto;
       position: relative;
 
       .wrap-img {
