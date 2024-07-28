@@ -36,6 +36,8 @@
             </div>
 
             <div class="rmbt-commercial-roofing-block__col rmbt-commercial-roofing-block__icons-block icons-block">
+
+
                <div class="icons-block__years icon-block">
                   <div class="icon-block__title">1</div>
                   <div class="blur-block icon-block__text">

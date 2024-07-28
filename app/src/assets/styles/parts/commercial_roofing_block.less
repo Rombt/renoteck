@@ -4,6 +4,11 @@
   position: relative;
   min-height: 1500px;
 
+  .to(1024px,{
+  
+    padding-bottom: 50px;
+  });
+
   &__bg {
     position: absolute;
     left: 0;
@@ -73,6 +78,13 @@
   }
 }
 .icons-block {
+  width: 100%;
+  row-gap: 30px;
+
+  * {
+    box-sizing: border-box;
+  }
+
   &__years {
     width: 350px;
   }
@@ -85,6 +97,7 @@
 }
 .icon-block {
   width: 30%;
+  height: auto;
 
   &__title {
   }
@@ -94,7 +107,8 @@
     justify-content: center;
     line-height: 140%;
     padding: 20px 20px 20px 20px;
-    //  height: 152px;
+    height: auto;
+    min-height: 152px;
     width: 100%;
   }
 }

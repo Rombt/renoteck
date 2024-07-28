@@ -1,0 +1,60 @@
+.new-roof-construction-block-wrapper-section {
+  position: relative;
+
+  //   border: 5px solid #0515fd;
+}
+.rmbt-new-roof-construction-block-full-width {
+  position: relative;
+  min-height: 1850px;
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -250px;
+    bottom: 0;
+    z-index: -1;
+    clip-path: polygon(0 0, 100% 10%, 100% 100%, 0% 100%);
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        360deg,
+        rgba(0, 0, 0, 0.75) 0%,
+        rgba(0, 0, 0, 0.9) 100%
+      );
+    }
+  }
+}
+.rmbt-new-roof-construction-block {
+  &__title {
+  }
+  &__text {
+    .font-p {
+    }
+  }
+
+  .tabs {
+    &__nav {
+    }
+    &__title {
+    }
+    &__title-active {
+    }
+    &__content {
+    }
+    &__body {
+    }
+    &__body-active {
+    }
+  }
+}
+.rmbt-new-roof-construction-tabs {
+}
