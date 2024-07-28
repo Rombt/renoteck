@@ -12,7 +12,7 @@
 
 
    get_template_part('template-parts/parts/commercial_roofing_block');
-   // get_template_part('template-parts/parts/benefits_block');
+   get_template_part('template-parts/parts/we_aim_block');
    // get_template_part('template-parts/parts/finansing_about');
    // get_template_part('template-parts/parts/banner_capture_form_block');
    // get_template_part('template-parts/parts/testimonials_block');

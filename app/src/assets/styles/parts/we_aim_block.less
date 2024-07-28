@@ -1,0 +1,60 @@
+.we-aim-block-wrapper-section {
+  position: relative;
+}
+.rmbt-we-aim-block-full-width {
+  position: relative;
+  min-height: 1448px;
+
+  &__bg {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    bottom: 0px;
+    width: 100%;
+    z-index: -1;
+
+    &::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+
+      background: rgb(0, 0, 0);
+      background: linear-gradient(
+        360deg,
+        rgba(0, 0, 0, 0.75) 0%,
+        rgba(0, 0, 0, 0.9) 100%
+      );
+    }
+  }
+}
+.rmbt-we-aim-block {
+  width: 100%;
+  min-height: 1448px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .rmbt-we-do-card {
+    &__img {
+      order: 1;
+      height: 875px;
+    }
+
+    &__article-body {
+      order: 0;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .section-title {
+        font-size: 60px;
+        width: 100%;
+      }
+    }
+  }
+}
