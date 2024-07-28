@@ -25,19 +25,43 @@
                <button type="button" class="tabs__title" data-tab="SBS">SBS</button>
             </nav>
             <div class="tabs__content">
-               <div class="tabs__body tabs__body-active" data-tab-name="TPO">
+               <div class="blur-block tabs__body tabs__body-active" data-tab-name="TPO">
+                  <div class="wrap-img">
+                     <img
+                        src="<?php echo get_template_directory_uri() ?>/assets/img/new-roof-construction-block/new-roof-construction-block_1.jpg"
+                        alt="">
+                  </div>
+                  <p>
+                  <h3 class="section-title">Thermoplastic Polyolefin </h3>
+                  <ul class="font-p">
+                     <li>Popular choice in “green” buildings. </li>
+                     <li>These roofs are highly resistant to UV rays, ozone and chemical exposure.</li>
+                     <li>Highly reflective design options also effectively trim
+                        building cooling costs. </li>
+                     <li>Resistant to ponding water </li>
+                     <li>Less flexible and more flammable than PVC </li>
+                  </ul>
+                  <h3 class="section-title">Roofing Methods</h3>
+                  <ul class="font-p">
+                     <li>Mechanically AttachedMembrane is mechanically attached to the structure with mechanical anchors
+                     </li>
+                     <li>Fully AdheredMembrane is bonded directly to the insulation board or other substrate</li>
+                     <li>Point-AffixedPlates are installed at fixed intervals & the membrane is welded to the plates
+                     </li>
+                  </ul>
+                  </p>
 
                </div>
-               <div class="tabs__body" data-tab-name="EPDM">
+               <div class="blur-block tabs__body" data-tab-name="EPDM">
 
                </div>
-               <div class="tabs__body" data-tab-name="PVC">
+               <div class="blur-block tabs__body" data-tab-name="PVC">
 
                </div>
-               <div class="tabs__body" data-tab-name="BUR">
+               <div class="blur-block tabs__body" data-tab-name="BUR">
 
                </div>
-               <div class="tabs__body" data-tab-name="SBS">
+               <div class="blur-block tabs__body" data-tab-name="SBS">
 
                </div>
             </div>
