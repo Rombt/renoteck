@@ -44,6 +44,7 @@ export const path = {
     return {
       styles: [
         `${this.src.php}/assets/styles/**/*.less`,
+        `${this.src.php}/template-parts/sections/**/*.less`, // for creating components
         `${this.src.php}/assets/styles/**/*.scss`,
         `${this.src.php}/${this.srcPluginName}/assets/styles/**/*.less`,
         `${this.src.php}/${this.srcPluginName}/inc/gutenberg/blocks/**/*.css`,

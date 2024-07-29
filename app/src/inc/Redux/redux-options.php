@@ -166,6 +166,11 @@ require_once dirname(__FILE__) . '/sections/we_aim_block.php';
 require_once dirname(__FILE__) . '/sections/new_roof_construction.php';
 
 
+// require_once dirname(__FILE__) . '/sections/leaking_or_damaged_roof.redux.php';
+require_once get_template_directory() . '/template-parts/sections/leaking_or_damaged_roof/leaking_or_damaged_roof.redux.php';
+// app\src\template-parts\sections\leaking_or_damaged_roof\leaking_or_damaged_roof.redux.php
+
+
 
 // require_once dirname(__FILE__) . '/sections/front_page.php';
 // require_once dirname(__FILE__) . '/sections/equipment-categories.php';
