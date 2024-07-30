@@ -23,23 +23,46 @@
             <?php get_template_part('template-parts/components/title', 'section', ['title' => rmbt_get_redux_field('rmbt_leaking-or-damaged-roof_section-subtitle')]); ?>
          </div>
          <div class="rmbt-leaking-or-damaged-roof-block__text">
-            <p class="font-p"><?php echo rmbt_get_redux_field('rmbt_leaking-or-damaged-roof_section-text-2'); ?>
-            </p>
+            <p class="font-p"><?php echo rmbt_get_redux_field('rmbt_leaking-or-damaged-roof_section-text-2'); ?> </p>
          </div>
 
 
          <?php get_template_part('template-parts/components/card_we_do_block', null, [
-            'title_id' => 'rmbt-we-aim-block_section-title',
-            'text_id' => 'rmbt-we-aim-block_section-text',
-            'img_id' => 'rmbt-we-aim-block_img-id',
-            'img_alt' => 'rmbt-we-aim-bloc_img-alt',
+            'title_id' => '',
+            'text_id' => 'rmbt_leaking-or-damaged-roof_text-1',
+            'img_id' => 'rmbt_leaking-or-damaged-roof_img-id-1',
+            'img_alt' => 'rmbt_leaking-or-damaged-roof_img-alt-1',
             'number_circle'=>'1',
          ]);
+         ?>
+         <?php get_template_part('template-parts/components/card_we_do_block', null, [
+            'title_id' => '',
+            'text_id' => 'rmbt_leaking-or-damaged-roof_text-1',
+            'img_id' => 'rmbt_leaking-or-damaged-roof_img-id-1',
+            'img_alt' => 'rmbt_leaking-or-damaged-roof_img-alt-1',
+            'number_circle'=>'1',
+         ]);
+         ?>
+         <?php get_template_part('template-parts/components/card_we_do_block', null, [
+            'title_id' => '',
+            'text_id' => 'rmbt_leaking-or-damaged-roof_text-1',
+            'img_id' => 'rmbt_leaking-or-damaged-roof_img-id-1',
+            'img_alt' => 'rmbt_leaking-or-damaged-roof_img-alt-1',
+            'number_circle'=>'1',
+         ]);
+         ?>
+         <?php get_template_part('template-parts/components/card_we_do_block', null, [
+            'title_id' => '',
+            'text_id' => 'rmbt_leaking-or-damaged-roof_text-1',
+            'img_id' => 'rmbt_leaking-or-damaged-roof_img-id-1',
+            'img_alt' => 'rmbt_leaking-or-damaged-roof_img-alt-1',
+            'number_circle'=>'1',
+         ]);
+         ?>
 
-
-
-
-
+         <div class="rmbt-leaking-or-damaged-roof-block__text">
+            <p class="font-p"><?php echo rmbt_get_redux_field('rmbt_leaking-or-damaged-roof_section-text-3'); ?> </p>
+         </div>
 
       </section>
    </div>
