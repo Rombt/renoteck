@@ -6,11 +6,12 @@
          </div>
       </div>
       <section class="rmbt-container rmbt-we-aim-block">
-         <?php get_template_part('template-parts/components/card-we-do-block', null, [
+         <?php get_template_part('template-parts/components/card_we_do_block', null, [
             'title_id' => 'rmbt-we-aim-block_section-title',
             'text_id' => 'rmbt-we-aim-block_section-text',
             'img_id' => 'rmbt-we-aim-block_img-id',
             'img_alt' => 'rmbt-we-aim-bloc_img-alt',
+            'number_circle'=>'1',
          ]);
           ?>
       </section>

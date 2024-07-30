@@ -14,7 +14,7 @@
             <?php get_template_part('template-parts/components/title', 'section', ['title' => rmbt_get_redux_field('rmbt_leaking-or-damaged-roof_section-title')]); ?>
          </div>
          <div class="rmbt-leaking-or-damaged-roof-block__text">
-            <p class="font-p"><?php echo rmbt_get_redux_field('rmbt_leaking-or-damaged-roof_section-text'); ?>
+            <p class="font-p"><?php echo rmbt_get_redux_field('rmbt_leaking-or-damaged-roof_section-text-1'); ?>
             </p>
          </div>
 
@@ -23,7 +23,7 @@
             <?php get_template_part('template-parts/components/title', 'section', ['title' => rmbt_get_redux_field('rmbt_leaking-or-damaged-roof_section-subtitle')]); ?>
          </div>
          <div class="rmbt-leaking-or-damaged-roof-block__text">
-            <p class="font-p"><?php echo rmbt_get_redux_field('rmbt_leaking-or-damaged-roof_section-text-1'); ?>
+            <p class="font-p"><?php echo rmbt_get_redux_field('rmbt_leaking-or-damaged-roof_section-text-2'); ?>
             </p>
          </div>
 
