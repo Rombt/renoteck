@@ -40,7 +40,7 @@
             'text_id' => 'rmbt_leaking-or-damaged-roof_text-1',
             'img_id' => 'rmbt_leaking-or-damaged-roof_img-id-1',
             'img_alt' => 'rmbt_leaking-or-damaged-roof_img-alt-1',
-            'number_circle'=>'1',
+            'number_circle'=>'2',
          ]);
          ?>
          <?php get_template_part('template-parts/components/card_we_do_block', null, [
@@ -48,7 +48,7 @@
             'text_id' => 'rmbt_leaking-or-damaged-roof_text-1',
             'img_id' => 'rmbt_leaking-or-damaged-roof_img-id-1',
             'img_alt' => 'rmbt_leaking-or-damaged-roof_img-alt-1',
-            'number_circle'=>'1',
+            'number_circle'=>'3',
          ]);
          ?>
          <?php get_template_part('template-parts/components/card_we_do_block', null, [
@@ -56,7 +56,7 @@
             'text_id' => 'rmbt_leaking-or-damaged-roof_text-1',
             'img_id' => 'rmbt_leaking-or-damaged-roof_img-id-1',
             'img_alt' => 'rmbt_leaking-or-damaged-roof_img-alt-1',
-            'number_circle'=>'1',
+            'number_circle'=>'4',
          ]);
          ?>
 

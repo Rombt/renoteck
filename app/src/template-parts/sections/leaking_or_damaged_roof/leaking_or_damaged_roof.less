@@ -52,4 +52,50 @@
     .font-p {
     }
   }
+
+  .rmbt-we-do-card {
+    width: 1115px;
+    height: 300px;
+
+    justify-content: space-between;
+
+    &:nth-child(odd) {
+      .shift(1);
+    }
+
+    &:nth-child(even) {
+      .shift(4);
+
+      .from(1300px,{
+
+      .rmbt-we-do-card__article-body {
+        order: 1;
+      }
+  
+      .rmbt-we-do-card__img {
+        order: 0;
+      }
+    });
+    }
+
+    &__img {
+      width: 426px;
+      height: 301px;
+    }
+
+    &__circle {
+      display: block;
+    }
+
+    &__article-body {
+      max-width: 570px;
+      margin: 0px 0px 0px 0px;
+      display: flex;
+      align-items: center;
+    }
+
+    &__article-text {
+      // text-align: right !important;
+    }
+  }
 }
