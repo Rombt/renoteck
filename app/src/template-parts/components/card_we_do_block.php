@@ -18,4 +18,4 @@
                   <?php echo rmbt_get_redux_field($args['text_id']) ?>
                </div>
             </div>
-         </article>
+         </article>]

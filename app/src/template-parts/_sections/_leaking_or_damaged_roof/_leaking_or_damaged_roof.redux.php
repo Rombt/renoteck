@@ -43,19 +43,18 @@ Redux::set_section(
          ),
 
          /*------------------  the start of first article block-----------------*/
-         // array(
-         //    'id' => 'rmbt_leaking-or-damaged-roof_title-1',
-         //    'type' => 'text',
-         //    'title' => esc_html__('Title of first article','rmbt_renoteck'),
-         //    'default' => esc_html__('We Do METAL ROOFING', 'rmbt_renoteck'),
-         // ),
+         array(
+            'id' => 'rmbt_leaking-or-damaged-roof_title-1',
+            'type' => 'text',
+            'title' => esc_html__('Title of first article','rmbt_renoteck'),
+            'default' => esc_html__('We Do METAL ROOFING', 'rmbt_renoteck'),
+         ),
          array(
             'id' => 'rmbt_leaking-or-damaged-roof_text-1',
             'type' => 'textarea',
             'title' => esc_html__('Text of first article', 'rmbt_renoteck'), 
-            'default' => esc_html__('Our experienced estimator will visit your location, our initial service charge includes an assessment of the problem and 30 minutes to repair, if it’s a minor problem.', 'rmbt_renoteck'),
+            'default' => esc_html__('Renoteck`s specialty is lifetime warranty metal roofing. We offer full installation service in Calgary, Edmonton, Red Deer, Lethbridge, Medicine Hat and surrounding communities. Metal roofing is a trademark of Renoteck and we believe it is the best material to use in Alberta’s harsh climate, where heat, hail, snow and high winds are common place. With the superior coating used on steel roofing products you can rest assured that your roof with look the same in 50 years. Metal roofs are very affordable, they are ¼ the cost of real clay roofing tiles or genuine slate roofs. Read more', 'rmbt_renoteck'),
          ),
-         
          array(
             'id' => 'rmbt_leaking-or-damaged-roof_img-id-1',
             'type' => 'media',
@@ -64,7 +63,7 @@ Redux::set_section(
             'compiler' => 'true',
             'preview_size' => 'full',
             'default' => array(
-            'url' => '/assets/img/leaking_or_damaged_roof/leaking_or_damaged_roof_1.jpg'
+            'url' => '/assets/img/we-do-block/we-do-block_1.jpg'
             ),
          ),
          array(
