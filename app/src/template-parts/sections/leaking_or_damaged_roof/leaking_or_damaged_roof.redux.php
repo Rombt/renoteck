@@ -81,7 +81,7 @@ Redux::set_section(
          /*------------------  the start of second article block-----------------*/
 
          array(
-            'id' => 'rmbt_leaking-or-damaged-roof_text-1',
+            'id' => 'rmbt_leaking-or-damaged-roof_text-2',
             'type' => 'textarea',
             'title' => esc_html__('Text of second article', 'rmbt_renoteck'), 
             'default' => esc_html__('Should further work be required, Renoteck will provide a written quotation and a time commitment for completing repairs.', 'rmbt_renoteck'),
@@ -110,7 +110,7 @@ Redux::set_section(
          /*------------------  the start of third article block-----------------*/
 
          array(
-            'id' => 'rmbt_leaking-or-damaged-roof_text-1',
+            'id' => 'rmbt_leaking-or-damaged-roof_text-3',
             'type' => 'textarea',
             'title' => esc_html__('Text of third article', 'rmbt_renoteck'), 
             'default' => esc_html__('Our crew will complete the work in a professional and timely manner.', 'rmbt_renoteck'),
@@ -138,7 +138,7 @@ Redux::set_section(
          /*------------------  the start of fourth article block-----------------*/
 
          array(
-            'id' => 'rmbt_leaking-or-damaged-roof_text-1',
+            'id' => 'rmbt_leaking-or-damaged-roof_text-4',
             'type' => 'textarea',
             'title' => esc_html__('Text of fourth article', 'rmbt_renoteck'), 
             'default' => esc_html__('We invoice your company for the job.', 'rmbt_renoteck'),
