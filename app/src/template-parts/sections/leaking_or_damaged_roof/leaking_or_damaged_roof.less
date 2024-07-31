@@ -41,38 +41,19 @@
   }
 }
 .rmbt-leaking-or-damaged-roof-block {
-  border: 10px solid #0515fd;
+  @h_card: 300px;
+  @mb_card: 214px;
 
-  &__cards-wrap {
+  // .card-wrap-1,
+  // .card-wrap-2,
+  // .card-wrap-3,
+  // .card-wrap-4,
+  .card-wrap {
     position: relative;
-  }
+    width: max-content;
+    margin-bottom: @mb_card;
 
-  &__svg-path {
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    // transform: translate(-50%, -50%);
-    width: 325px;
-    // height: 100%;
-
-    border: 1px solid #9efd05;
-  }
-  &__title {
-    width: 100%;
-    text-align: center;
-  }
-  &__text {
-    margin-bottom: 96px;
-    .font-p {
-    }
-  }
-
-  .rmbt-we-do-card {
-    width: 1115px;
-    height: 300px;
-
-    justify-content: space-between;
+    border: 1px solid #0515fd;
 
     &:nth-child(odd) {
       .shift(1);
@@ -80,6 +61,57 @@
 
     &:nth-child(even) {
       .shift(4);
+    }
+
+    svg {
+      position: absolute;
+      right: 0%;
+      top: 0%;
+
+      transform: translate(70%, 30%);
+      width: 325px;
+    }
+  }
+
+  .card-wrap-2 {
+    svg {
+      top: auto;
+      right: 12%;
+      // top: 100%;
+      transform: translate(0%, 0%);
+    }
+  }
+  .card-wrap-2 {
+  }
+  .card-wrap-3 {
+  }
+  .card-wrap-4 {
+  }
+
+  &__title {
+    width: 100%;
+    text-align: center;
+  }
+  &__text {
+    margin-bottom: 96px;
+
+    .font-p {
+    }
+  }
+
+  .rmbt-we-do-card {
+    width: 1115px;
+    // height: 300px;
+    height: @h_card;
+
+    justify-content: space-between;
+
+    &:nth-child(odd) {
+      // .shift(1);
+    }
+
+    &:nth-child(even) {
+      // .shift(4);
 
       .from(1300px,{
 
@@ -111,6 +143,8 @@
 
     &__article-text {
       // text-align: right !important;
+
+      border: 2px solid #fd9a05;
     }
   }
 }

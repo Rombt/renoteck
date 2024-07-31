@@ -55,6 +55,7 @@ export const path = {
       ],
       js: [
         `${this.src.php}/assets/js/**/*.js`,
+        `${this.src.php}/template-parts/sections/**/*.js`, // for creating components
         `${this.src.php}/${this.srcPluginName}/assets/js/**/*.js`,
         `${this.src.php}/${this.srcPluginName}/inc/gutenberg/blocks/**/*.js`,
       ],

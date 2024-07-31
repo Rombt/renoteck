@@ -7,6 +7,8 @@ import './modules/arrowsInputNumberStyle.js';
 import './modules/HorizontalMenu.js';
 import './modules/sliders.js';
 
+import '../../template-parts/sections/leaking_or_damaged_roof/leaking_or_damaged_roof.js';
+
 (function captureForm() {
   const captureForm = document.querySelector('form.rmbt-capture-form');
   if (!captureForm) return;
