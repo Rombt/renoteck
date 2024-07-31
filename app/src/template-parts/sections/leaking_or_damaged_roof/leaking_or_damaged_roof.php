@@ -58,12 +58,12 @@
          ?>
          </div>
          <!-- <div class="card-wrap-3"> -->
-         <div class="card-wrap">
-            <!-- <svg>
+         <div class="card-wrap card-wrap-3">
+            <svg>
                <use
                   xlink:href="<?php echo get_template_directory_uri() ?>/assets/img/icons/sprite.svg#leaking_or_damaged_roof_path_3">
                </use>
-            </svg> -->
+            </svg>
             <?php get_template_part('template-parts/components/card_we_do_block', null, [
             'title_id' => '',
             'text_id' => 'rmbt_leaking-or-damaged-roof_text-3',

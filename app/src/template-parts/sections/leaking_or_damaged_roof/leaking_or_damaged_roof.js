@@ -20,47 +20,31 @@
         const topY2 = rect2.top;
         const distance = topY2 - middleY1;
         svg.style.height = distance + 'px';
-      }
-      if (index === 1) {
+      } else if (index === 1) {
         const rectCard = cardWrap
           .querySelector('.rmbt-we-do-card__article-body')
           .getBoundingClientRect();
         const rectText = cardWrap
           .querySelector('.rmbt-we-do-card__article-text')
           .getBoundingClientRect();
-
-        //   const rect2 = nl_cardWraps[index - 1]
-        //     .querySelector('.rmbt-we-do-card__article-text')
-        //     .getBoundingClientRect();
-        //   const middleY1 = rect1.top + rect1.height;
-        //   const topY2 = rect2.top;
-        //   const distance = topY2 - middleY1;
-
-        //   console.log(cardWrap.querySelector('.rmbt-we-do-card__article-text'));
-        //   console.log('rect1 = ', rect1);
-
-        console.log(
-          "querySelector('.rmbt-we-do-card__article-body') = ",
-          cardWrap.querySelector('.rmbt-we-do-card__article-body')
-        );
-        console.log(
-          "querySelector('.rmbt-we-do-card__article-text') = ",
-          cardWrap.querySelector('.rmbt-we-do-card__article-text')
-        );
-        console.log('rectCard.top = ', rectCard.top);
-        console.log('rectText.bottom = ', rectText.bottom);
-        console.log('rectText.top = ', rectText.top);
-
-        console.log(
-          "rectText.bottom - rectCard.top + 'px' = ",
-          rectText.bottom - rectCard.top + 'px'
-        );
-
-        console.log('rectText.height  = ', rectText.height);
-
         svg.style.top = rectText.bottom - rectCard.top + 'px';
 
-        //   svg.style.height = distance + 'px';
+        const rect2 = nl_cardWraps[index + 1]
+          .querySelector('.rmbt-we-do-card__article-text')
+          .getBoundingClientRect();
+        const distance = rect2.top - rectText.bottom;
+        svg.style.height = distance + rect2.height / 2 + 'px';
+      } else if (index === 2) {
+        const rectCard = cardWrap
+          .querySelector('.rmbt-we-do-card__article-body')
+          .getBoundingClientRect();
+
+        const circle = nl_cardWraps[index + 1]
+          .querySelector('.rmbt-we-do-card__circle')
+          .getBoundingClientRect();
+
+        const distance = circle.top - rectCard.bottom + rectCard.height / 2;
+        svg.style.height = distance + circle.height / 2 + 'px';
       }
     });
   });
