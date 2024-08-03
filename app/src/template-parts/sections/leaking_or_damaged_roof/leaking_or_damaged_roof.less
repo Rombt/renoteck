@@ -66,16 +66,17 @@
 
       transform: translate(70%, 30%);
       width: 325px;
+
+      .to(1280px,{
+      display: none;
+      });
     }
   }
 
   .card-wrap-2 {
-    border: 2px solid #0515fd;
-
     svg {
       top: auto;
-      right: 14%;
-      // top: 100%;
+      .adaptive-prop(right, 150.5, -220);
       transform: translate(0%, 0%) rotate(-15deg);
     }
   }
