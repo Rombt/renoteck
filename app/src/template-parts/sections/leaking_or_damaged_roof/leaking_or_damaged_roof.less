@@ -46,9 +46,8 @@
 
   .card-wrap {
     position: relative;
-    width: max-content;
+    max-width: max-content;
     margin-bottom: @mb_card;
-
     .adaptive-prop(padding-right, 0, 60);
 
     &:nth-child(odd) {
@@ -67,17 +66,23 @@
       transform: translate(70%, 30%);
       width: 325px;
 
-      .to(1280px,{
-      display: none;
-      });
+      // .to(1280px,{
+      // display: none;
+      // });
     }
   }
 
   .card-wrap-2 {
+    border: 10px solid #0515fd;
+
     svg {
       top: auto;
-      .adaptive-prop(right, 150.5, -220);
       transform: translate(0%, 0%) rotate(-15deg);
+      right: 10%;
+      // .adaptive-prop(right, 150.5, -220);
+      .adaptive-prop(right, 100, -250);
+
+      border: 5px solid #0dfd05;
     }
   }
   .card-wrap-3 {
@@ -109,8 +114,9 @@
   .rmbt-we-do-card {
     max-width: 1115px;
     height: @h_card;
-
     justify-content: space-between;
+
+    flex-wrap: nowrap;
 
     &:nth-child(odd) {
       // .shift(1);
